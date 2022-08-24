@@ -17,4 +17,11 @@ def open_write_file(name):
 
 
 def get_file_name():
-    print()
+    print("Enter path + file name")
+    print("say back or zurueck to jump back one character")
+    print("For memory they say save or apply")
+
+    # TODO Record
+    save_path = False
+    save_path_name = ""
+    #while save_path is False:
