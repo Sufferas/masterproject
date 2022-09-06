@@ -1,3 +1,15 @@
 conda install -c conda-forge speechrecognition
 conda install -c anaconda pyaudio
 conda install -c conda-forge m2w64-flac
+
+anaconda:
+pytorch
+pyaudio
+
+
+Dependencies:
+flac
+
+SpeechRecognition
+pyaudio
+torch torchvision torchaudio

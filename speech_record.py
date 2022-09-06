@@ -18,14 +18,14 @@ def from_microphone():
         audio = speech_engine.record(micro, duration=5)
         print("Recognition...")
         # text = speech_engine.recognize_google_cloud(audio, language="en-EN")
-        print("You said " + speech_engine.recognize_google(audio, language="de-DE"))
+        print("You said " + speech_engine.recognize_google(audio, language="en-EN"))
         # text = speech_engine.recognize_google(audio, language="en-EN")
         # return text
 
 
 
 def read_py_data():
-    datei = open('main.py','r')
+    datei = open('main.py', 'r')
     print(datei.read(2))
 # print(from_file(file_name))
 #print(from_microphone())
