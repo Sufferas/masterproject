@@ -8,7 +8,15 @@ from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
 
-def train_models(json_file):
+class CONST:
+    NUM_EPOCHS = 1000
+    BATCH_SIZE = 8
+    LEARNING_RATE = 0.001
+    HIDDEN_SIZE = 8
+
+
+def train_models(json_file, trained_model, CONST):
+
     with open(json_file, 'r') as f:
         intents = json.load(f)
 
@@ -54,13 +62,8 @@ def train_models(json_file):
     y_train = np.array(y_train)
 
     # Hyper-parameters
-    num_epochs = 1000
-    batch_size = 8
-    learning_rate = 0.001
     input_size = len(X_train[0])
-    hidden_size = 8
     output_size = len(tags)
-    print(input_size, output_size)
 
     class ChatDataset(Dataset):
 
@@ -79,20 +82,20 @@ def train_models(json_file):
 
     dataset = ChatDataset()
     train_loader = DataLoader(dataset=dataset,
-                              batch_size=batch_size,
+                              batch_size=CONST.BATCH_SIZE,
                               shuffle=True,
                               num_workers=0)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    model = NeuralNet(input_size, hidden_size, output_size).to(device)
+    model = NeuralNet(input_size, CONST.HIDDEN_SIZE, output_size).to(device)
 
     # Loss and optimizer
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+    optimizer = torch.optim.Adam(model.parameters(), lr=CONST.LEARNING_RATE)
 
     # Train the model
-    for epoch in range(num_epochs):
+    for epoch in range(CONST.NUM_EPOCHS):
         for (words, labels) in train_loader:
             words = words.to(device)
             labels = labels.to(dtype=torch.long).to(device)
@@ -109,25 +112,22 @@ def train_models(json_file):
             optimizer.step()
 
         if (epoch + 1) % 100 == 0:
-            print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}')
+            print(f'Epoch [{epoch + 1}/{CONST.NUM_EPOCHS}], Loss: {loss.item():.4f}')
 
     print(f'final loss: {loss.item():.4f}')
 
     data = {
         "model_state": model.state_dict(),
         "input_size": input_size,
-        "hidden_size": hidden_size,
+        "hidden_size": CONST.HIDDEN_SIZE,
         "output_size": output_size,
         "all_words": all_words,
         "tags": tags
     }
 
-    FILE = "TrainedModels/data.pth"
-    torch.save(data, FILE)
-
-    print(f'training complete. file saved to {FILE}')
+    torch.save(data, trained_model)
+    print(f'training complete. file saved to {trained_model}')
 
 
-train_models('jsonFiles/intents.json')
-
-
+if __name__ == "__main__":
+    train_models('jsonFiles/intents.json', "TrainedModels/data.pth", CONST)

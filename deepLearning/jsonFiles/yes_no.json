@@ -1,0 +1,32 @@
+{
+  "intents": [
+    {
+      "tag": "yes",
+      "patterns": [
+        "yes",
+        "yes please",
+        "ja",
+        "yes sure",
+        "sure yes",
+        "y"
+      ],
+      "responses": [
+        "YES"
+      ]
+    },
+    {
+      "tag": "no",
+      "patterns": [
+        "no",
+        "no thanks",
+        "thanks no",
+        "nein",
+        "nein danke",
+        "n"
+      ],
+      "responses": [
+        "NO"
+      ]
+    }
+  ]
+}
