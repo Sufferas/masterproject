@@ -1,8 +1,9 @@
 import random
 import json
 import torch
-from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
+from deepLearning.model_neural_net import NeuralNet
+
+from deepLearning.nltk_utils import bag_of_words, tokenize
 
 
 def get_trained_model(trained_model, json_file, input_string):
@@ -42,11 +43,12 @@ def get_trained_model(trained_model, json_file, input_string):
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                # print(random.choice(intent['responses']))
+                print(random.choice(intent['responses']))
                 return True, random.choice(intent['responses'])
     else:
-        # print(f"{bot_name}: No function could be connected to your input.")
+        print("No function could be connected to your input.")
         return False, "No function could be connected to your input."
 
 
 # get_trained_model("TrainedModels/data.pth", "jsonFiles/intents.json", "hello")
+# get_trained_model("TrainedModels/yes_no_data.pth", 'jsonFiles/yes_no.json', "yes")

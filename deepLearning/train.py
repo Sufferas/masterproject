@@ -4,8 +4,8 @@ import json
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-from nltk_utils import bag_of_words, tokenize, stem
-from model import NeuralNet
+from deepLearning.nltk_utils import bag_of_words, tokenize, stem
+from model_neural_net import NeuralNet
 
 
 class CONST:
@@ -130,4 +130,5 @@ def train_models(json_file, trained_model, CONST):
 
 
 if __name__ == "__main__":
-    train_models('jsonFiles/intents.json', "TrainedModels/data.pth", CONST)
+    # train_models('jsonFiles/intents.json', "TrainedModels/data.pth", CONST)
+    train_models('jsonFiles/yes_no.json', "TrainedModels/yes_no_data.pth", CONST)
