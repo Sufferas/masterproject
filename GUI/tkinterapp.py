@@ -3,6 +3,8 @@ from tkinter import ttk
 import time
 import threading
 
+from deepLearning.VoiceFunctions.voice_functions import voice_loop
+
 
 def five_seconds():
     time.sleep(5)
@@ -70,7 +72,7 @@ class App(tk.Tk):
         self.style.configure('Heading.TLabel', font=('Helvetica', 12))
         self.style.configure('system_help.TLabel', font=('Helvetica', 10))
 
-        threading.Thread(target=five_seconds).start()
+        threading.Thread(target=voice_loop(dict_tk)).start()
 
 
 if __name__ == "__main__":
