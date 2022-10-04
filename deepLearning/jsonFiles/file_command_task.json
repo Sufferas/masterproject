@@ -1,0 +1,42 @@
+{
+  "intents": [
+    {
+      "tag": "edit",
+      "patterns": [
+        "edit file",
+        "file bearbeitet",
+        "ja",
+        "edited"
+      ],
+      "responses": [
+        "edit"
+      ]
+    },
+    {
+      "tag": "add",
+      "patterns": [
+        "add file",
+        "hinzufügen einer neuen datei",
+        "Datei erstellen",
+        "create file"
+      ],
+      "responses": [
+        "add"
+      ]
+    },
+    {
+      "tag": "cmd",
+      "patterns": [
+        "run code",
+        "run program",
+        "test code",
+        "cmd",
+        "command",
+        "terminal"
+      ],
+      "responses": [
+        "cmd"
+      ]
+    }
+  ]
+}

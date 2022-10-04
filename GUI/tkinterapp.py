@@ -58,9 +58,16 @@ class App(tk.Tk):
         system_help_text.grid(column=1, row=5, sticky=tk.E, padx=5, pady=5)
         dict_tk["system_help_text"] = system_help_text
 
+        line_output_label = ttk.Label(self, text="Line output:", style='system_help.TLabel')
+        line_output_label.grid(column=0, row=6, sticky=tk.W, padx=5, pady=5)
+        line_output_text = ttk.Label(self, text="No file detect", style='system_help.TLabel')
+        line_output_text.grid(column=1, row=6, sticky=tk.E, padx=5, pady=5)
+        dict_tk["line_output_text"] = line_output_text
+
+
         for i in range(40):
 
-            add_rows_from_top = 6
+            add_rows_from_top = 7
             globals()[f"lines_{i}_label"] = ttk.Label(self, text=f"line:  {i} ")
             globals()[f"lines_{i}_label"].grid(column=0, row=add_rows_from_top+i, sticky=tk.W, padx=5, pady=1)
             dict_tk[f"lines_{i}_label"] = globals()[f"lines_{i}_label"]
@@ -72,7 +79,7 @@ class App(tk.Tk):
         self.style.configure('Heading.TLabel', font=('Helvetica', 12))
         self.style.configure('system_help.TLabel', font=('Helvetica', 10))
 
-        threading.Thread(target=voice_loop(dict_tk)).start()
+        threading.Thread(target=voice_loop, args=[dict_tk]).start()
 
 
 if __name__ == "__main__":

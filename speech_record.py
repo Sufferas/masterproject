@@ -27,9 +27,9 @@ def from_microphone():
 
 
 
-def read_py_data():
-    datei = open('main.py', 'r')
-    print(datei.read(2))
-# print(from_file(file_name))
-#print(from_microphone())
-read_py_data()
+# def read_py_data():
+#     datei = open('main.py', 'r')
+#     print(datei.read(2))
+# # print(from_file(file_name))
+# #print(from_microphone())
+# read_py_data()
