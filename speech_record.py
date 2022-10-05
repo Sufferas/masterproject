@@ -26,23 +26,6 @@ def from_microphone():
             return "no voice input detected"
 
 
-def from_microphone_test():
-    with sr.Microphone() as micro:
-
-        print("Recording...")
-        audio = speech_engine.record(micro, duration=5)
-        print("Recognition...")
-        print(audio)
-        text = speech_engine.recognize_google(audio, language="en-EN")
-
-        print("You said " + text)
-
-        # text = speech_engine.recognize_google(audio, language="en-EN")
-
-
-
-
-
 # def read_py_data():
 #     datei = open('main.py', 'r')
 #     print(datei.read(2))

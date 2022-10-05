@@ -25,6 +25,7 @@ def voice_loop(dict_tk):
         time.sleep(2)
 
         dict_tk["system_help_text"].config(text=text)
+        dict_tk["voice_recording_output_text"].config(text=text)
 
         if "cmd" == text:  # replace "edit new file" with a Command
             pass
@@ -43,14 +44,21 @@ def edit_file():
 
 def get_file_name(dict_tk):
     print("Do you want to spell it out or say it word for word?")
-    dict_tk["system_help_text"].config(text="Do you want to spell it out or say it word for word?")
-    voice_to_text = from_microphone()
-    print( voice_to_text)
-    text = get_trained_model("..\\deepLearning\\TrainedModels\\word_or_letters.pth", '..\\deepLearning\\jsonFiles\\word_or_letters.json', voice_to_text)
-    print("hello")
-    print(text)
-
-
+    dict_tk["system_help_text"].config(text="Do you want to spell it out or say it word for word? Say exit to return")
+    while True:
+        voice_to_text = from_microphone()
+        dict_tk["voice_recording_output_text"].config(text=voice_to_text)
+        text = get_trained_model("..\\deepLearning\\TrainedModels\\word_or_letters.pth", '..\\deepLearning\\jsonFiles\\word_or_letters.json', voice_to_text)
+        if text == "exit":
+            return
+        elif text == "word":
+            pass
+        elif text == "character":
+            pass
+        else:
+            print("statement could not be understood: \nHelp: say (word) or (character) or (exit)")
+            dict_tk["user_help_text"].config(
+                text="statement could not be understood: \nHelp: say (word) or (character) or (exit)")
 
 
 

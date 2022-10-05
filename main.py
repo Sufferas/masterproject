@@ -32,7 +32,6 @@ if __name__ == '__main__':
 
     print("Welcome, you can now edit files or codes also via voice control.")
     # from_microphone()
-    from_microphone_test()
 
     # while True:
     #     start_point()

@@ -23,6 +23,15 @@
       "responses": [
         "character"
       ]
+    },
+    {
+      "tag": "exit",
+      "patterns": [
+        "exit"
+      ],
+      "responses": [
+        "exit"
+      ]
     }
   ]
 }
