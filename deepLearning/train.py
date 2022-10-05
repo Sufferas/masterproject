@@ -131,5 +131,6 @@ def train_models(json_file, trained_model, CONST):
 
 if __name__ == "__main__":
     # train_models('jsonFiles/intents.json', "TrainedModels/data.pth", CONST)
-    #train_models('jsonFiles/yes_no.json', "TrainedModels/yes_no_data.pth", CONST)
-    train_models('jsonFiles/file_command_task.json', "TrainedModels/file_command_task.pth", CONST)
+    # train_models('jsonFiles/yes_no.json', "TrainedModels/yes_no_data.pth", CONST)
+    # train_models('jsonFiles/file_command_task.json', "TrainedModels/file_command_task.pth", CONST)
+    train_models('jsonFiles/word_or_letters.json', "TrainedModels/word_or_letters.pth", CONST)

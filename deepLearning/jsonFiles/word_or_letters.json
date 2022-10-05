@@ -1,0 +1,28 @@
+{
+  "intents": [
+    {
+      "tag": "word",
+      "patterns": [
+        "word input",
+        "word",
+        "wort für wort",
+        "word for word"
+      ],
+      "responses": [
+        "word"
+      ]
+    },
+    {
+      "tag": "character",
+      "patterns": [
+        "letters",
+        "characters",
+        "sign by sign",
+        "character by character"
+      ],
+      "responses": [
+        "character"
+      ]
+    }
+  ]
+}
