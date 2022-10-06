@@ -33,13 +33,14 @@ def voice_loop(dict_tk):
             pass
         elif "add" == text:
             create_file(dict_tk)
-            pass
         else:
             print("Command not found")
 
 
 def edit_file():
     pass
+
+
 
 
 def get_file_name(dict_tk):
