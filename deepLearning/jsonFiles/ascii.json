@@ -1,0 +1,1159 @@
+{
+  "intents": [
+    {
+      "tag": "delete",
+      "patterns": [
+        "delete",
+        "l\u00f6schen",
+        "loeschen",
+        "zur\u00fcck"
+      ],
+      "responses": [
+        "delete"
+      ]
+    },
+    {
+      "tag": "stop",
+      "patterns": [
+        "stop",
+        "beenden",
+        "ende",
+        "sicher",
+        "save"
+      ],
+      "responses": [
+        "stop"
+      ]
+    },
+    {
+      "tag": "tab",
+      "patterns": [
+        "tab",
+        "Tarp",
+        "Tabulator"
+      ],
+      "responses": [
+        "\t"
+      ]
+    },
+    {
+      "tag": " ",
+      "patterns": [
+        "leertaste",
+        "space",
+        "abstand",
+        " "
+      ],
+      "responses": [
+        " "
+      ]
+    },
+    {
+      "tag": "!",
+      "patterns": [
+        "ausrufezeichen",
+        "exclamation mark",
+        "rufezeichen",
+        "!"
+      ],
+      "responses": [
+        "!"
+      ]
+    },
+    {
+      "tag": "\"",
+      "patterns": [
+        "Anf\u00fchrungszeichen",
+        "quotation mark",
+        "",
+        "\""
+      ],
+      "responses": [
+        "\""
+      ]
+    },
+    {
+      "tag": "#",
+      "patterns": [
+        "doppelkreuz",
+        "double cross",
+        "Hashtag",
+        "#"
+      ],
+      "responses": [
+        "#"
+      ]
+    },
+    {
+      "tag": "$",
+      "patterns": [
+        "dollar",
+        "dollar",
+        "",
+        "$"
+      ],
+      "responses": [
+        "$"
+      ]
+    },
+    {
+      "tag": "%",
+      "patterns": [
+        "prozent",
+        "percent",
+        "prozent",
+        "%"
+      ],
+      "responses": [
+        "%"
+      ]
+    },
+    {
+      "tag": "&",
+      "patterns": [
+        "und zeichen",
+        "and sign",
+        "und",
+        "&"
+      ],
+      "responses": [
+        "&"
+      ]
+    },
+    {
+      "tag": "'",
+      "patterns": [
+        "apostroph",
+        "apostrophe",
+        "",
+        "'"
+      ],
+      "responses": [
+        "'"
+      ]
+    },
+    {
+      "tag": "(",
+      "patterns": [
+        "runde \u00f6ffnende Klammer",
+        "round opening bracket",
+        "runde Klammer links",
+        "("
+      ],
+      "responses": [
+        "("
+      ]
+    },
+    {
+      "tag": ")",
+      "patterns": [
+        "runde schlie\u00dfende Klammer",
+        "round closing bracket",
+        "runde Klammer rechts",
+        ")"
+      ],
+      "responses": [
+        ")"
+      ]
+    },
+    {
+      "tag": "*",
+      "patterns": [
+        "Stern",
+        "asterisk",
+        "Multiplikation",
+        "*"
+      ],
+      "responses": [
+        "*"
+      ]
+    },
+    {
+      "tag": "+",
+      "patterns": [
+        "plus",
+        "plus",
+        "",
+        "+"
+      ],
+      "responses": [
+        "+"
+      ]
+    },
+    {
+      "tag": ",",
+      "patterns": [
+        "komma",
+        "comma",
+        "komma",
+        ","
+      ],
+      "responses": [
+        ","
+      ]
+    },
+    {
+      "tag": "-",
+      "patterns": [
+        "minus",
+        "minus",
+        "minus",
+        "-"
+      ],
+      "responses": [
+        "-"
+      ]
+    },
+    {
+      "tag": ".",
+      "patterns": [
+        "punkt",
+        "period",
+        "punkt",
+        "."
+      ],
+      "responses": [
+        "."
+      ]
+    },
+    {
+      "tag": "/",
+      "patterns": [
+        "schr\u00e4gstrich",
+        "slash",
+        "dividieren",
+        "/"
+      ],
+      "responses": [
+        "/"
+      ]
+    },
+    {
+      "tag": "0",
+      "patterns": [
+        "null",
+        "zero",
+        "0"
+      ],
+      "responses": [
+        "0"
+      ]
+    },
+    {
+      "tag": "1",
+      "patterns": [
+        "eins",
+        "one",
+        "1"
+      ],
+      "responses": [
+        "1"
+      ]
+    },
+    {
+      "tag": "2",
+      "patterns": [
+        "zwei",
+        "two",
+        "2"
+      ],
+      "responses": [
+        "2"
+      ]
+    },
+    {
+      "tag": "3",
+      "patterns": [
+        "drei",
+        "three",
+        "3"
+      ],
+      "responses": [
+        "3"
+      ]
+    },
+    {
+      "tag": "4",
+      "patterns": [
+        "vier",
+        "four",
+        "4"
+      ],
+      "responses": [
+        "4"
+      ]
+    },
+    {
+      "tag": "5",
+      "patterns": [
+        "f\u00fcnf",
+        "five",
+        "5"
+      ],
+      "responses": [
+        "5"
+      ]
+    },
+    {
+      "tag": "6",
+      "patterns": [
+        "sechs",
+        "six",
+        "6"
+      ],
+      "responses": [
+        "6"
+      ]
+    },
+    {
+      "tag": "7",
+      "patterns": [
+        "sieben",
+        "seven",
+        "7"
+      ],
+      "responses": [
+        "7"
+      ]
+    },
+    {
+      "tag": "8",
+      "patterns": [
+        "acht",
+        "eight",
+        "8"
+      ],
+      "responses": [
+        "8"
+      ]
+    },
+    {
+      "tag": "9",
+      "patterns": [
+        "neun",
+        "nine",
+        "9"
+      ],
+      "responses": [
+        "9"
+      ]
+    },
+    {
+      "tag": ":",
+      "patterns": [
+        "Doppelpunkt",
+        "colon",
+        ":"
+      ],
+      "responses": [
+        ":"
+      ]
+    },
+    {
+      "tag": ";",
+      "patterns": [
+        "Semikolon",
+        "semicolon",
+        ";"
+      ],
+      "responses": [
+        ";"
+      ]
+    },
+    {
+      "tag": "<",
+      "patterns": [
+        "Kleiner als",
+        "less than",
+        "<"
+      ],
+      "responses": [
+        "<"
+      ]
+    },
+    {
+      "tag": "=",
+      "patterns": [
+        "Gleichheitszeichen",
+        "equal sign",
+        "="
+      ],
+      "responses": [
+        "="
+      ]
+    },
+    {
+      "tag": ">",
+      "patterns": [
+        "Gr\u00f6\u00dfer als",
+        "greater than",
+        ">"
+      ],
+      "responses": [
+        ">"
+      ]
+    },
+    {
+      "tag": "?",
+      "patterns": [
+        "Fragezeichen",
+        "question mark",
+        "?"
+      ],
+      "responses": [
+        "?"
+      ]
+    },
+    {
+      "tag": "@",
+      "patterns": [
+        "at-Zeichen",
+        "at sign",
+        "@"
+      ],
+      "responses": [
+        "@"
+      ]
+    },
+    {
+      "tag": "A",
+      "patterns": [
+        "Gro\u00dfbuchstabe A",
+        "Capital letters A",
+        "A",
+        "Gro\u00df A"
+      ],
+      "responses": [
+        "A"
+      ]
+    },
+    {
+      "tag": "B",
+      "patterns": [
+        "Gro\u00dfbuchstabe B",
+        "Capital letters B",
+        "B",
+        "Gro\u00df B"
+      ],
+      "responses": [
+        "B"
+      ]
+    },
+    {
+      "tag": "C",
+      "patterns": [
+        "Gro\u00dfbuchstabe C",
+        "Capital letters C",
+        "C",
+        "Gro\u00df C"
+      ],
+      "responses": [
+        "C"
+      ]
+    },
+    {
+      "tag": "D",
+      "patterns": [
+        "Gro\u00dfbuchstabe D",
+        "Capital letters D",
+        "D",
+        "Gro\u00df D"
+      ],
+      "responses": [
+        "D"
+      ]
+    },
+    {
+      "tag": "E",
+      "patterns": [
+        "Gro\u00dfbuchstabe E",
+        "Capital letters E",
+        "E",
+        "Gro\u00df E"
+      ],
+      "responses": [
+        "E"
+      ]
+    },
+    {
+      "tag": "F",
+      "patterns": [
+        "Gro\u00dfbuchstabe F",
+        "Capital letters F",
+        "F",
+        "Gro\u00df F"
+      ],
+      "responses": [
+        "F"
+      ]
+    },
+    {
+      "tag": "G",
+      "patterns": [
+        "Gro\u00dfbuchstabe G",
+        "Capital letters G",
+        "G",
+        "Gro\u00df G"
+      ],
+      "responses": [
+        "G"
+      ]
+    },
+    {
+      "tag": "H",
+      "patterns": [
+        "Gro\u00dfbuchstabe H",
+        "Capital letters H",
+        "H",
+        "Gro\u00df H"
+      ],
+      "responses": [
+        "H"
+      ]
+    },
+    {
+      "tag": "I",
+      "patterns": [
+        "Gro\u00dfbuchstabe I",
+        "Capital letters I",
+        "I",
+        "Gro\u00df I"
+      ],
+      "responses": [
+        "I"
+      ]
+    },
+    {
+      "tag": "J",
+      "patterns": [
+        "Gro\u00dfbuchstabe J",
+        "Capital letters J",
+        "J",
+        "Gro\u00df J"
+      ],
+      "responses": [
+        "J"
+      ]
+    },
+    {
+      "tag": "K",
+      "patterns": [
+        "Gro\u00dfbuchstabe K",
+        "Capital letters K",
+        "K",
+        "Gro\u00df K"
+      ],
+      "responses": [
+        "K"
+      ]
+    },
+    {
+      "tag": "L",
+      "patterns": [
+        "Gro\u00dfbuchstabe L",
+        "Capital letters L",
+        "L",
+        "Gro\u00df L"
+      ],
+      "responses": [
+        "L"
+      ]
+    },
+    {
+      "tag": "M",
+      "patterns": [
+        "Gro\u00dfbuchstabe M",
+        "Capital letters M",
+        "M",
+        "Gro\u00df M"
+      ],
+      "responses": [
+        "M"
+      ]
+    },
+    {
+      "tag": "N",
+      "patterns": [
+        "Gro\u00dfbuchstabe N",
+        "Capital letters N",
+        "N",
+        "Gro\u00df N"
+      ],
+      "responses": [
+        "N"
+      ]
+    },
+    {
+      "tag": "O",
+      "patterns": [
+        "Gro\u00dfbuchstabe O",
+        "Capital letters O",
+        "O",
+        "Gro\u00df O"
+      ],
+      "responses": [
+        "O"
+      ]
+    },
+    {
+      "tag": "P",
+      "patterns": [
+        "Gro\u00dfbuchstabe P",
+        "Capital letters P",
+        "P",
+        "Gro\u00df P"
+      ],
+      "responses": [
+        "P"
+      ]
+    },
+    {
+      "tag": "Q",
+      "patterns": [
+        "Gro\u00dfbuchstabe Q",
+        "Capital letters Q",
+        "Q",
+        "Gro\u00df Q"
+      ],
+      "responses": [
+        "Q"
+      ]
+    },
+    {
+      "tag": "R",
+      "patterns": [
+        "Gro\u00dfbuchstabe R",
+        "Capital letters R",
+        "R",
+        "Gro\u00df R"
+      ],
+      "responses": [
+        "R"
+      ]
+    },
+    {
+      "tag": "S",
+      "patterns": [
+        "Gro\u00dfbuchstabe S",
+        "Capital letters S",
+        "S",
+        "Gro\u00df S"
+      ],
+      "responses": [
+        "S"
+      ]
+    },
+    {
+      "tag": "T",
+      "patterns": [
+        "Gro\u00dfbuchstabe T",
+        "Capital letters T",
+        "T",
+        "Gro\u00df T"
+      ],
+      "responses": [
+        "T"
+      ]
+    },
+    {
+      "tag": "U",
+      "patterns": [
+        "Gro\u00dfbuchstabe U",
+        "Capital letters U",
+        "U",
+        "Gro\u00df U"
+      ],
+      "responses": [
+        "U"
+      ]
+    },
+    {
+      "tag": "V",
+      "patterns": [
+        "Gro\u00dfbuchstabe V",
+        "Capital letters V",
+        "V",
+        "Gro\u00df V"
+      ],
+      "responses": [
+        "V"
+      ]
+    },
+    {
+      "tag": "W",
+      "patterns": [
+        "Gro\u00dfbuchstabe W",
+        "Capital letters W",
+        "W",
+        "Gro\u00df W"
+      ],
+      "responses": [
+        "W"
+      ]
+    },
+    {
+      "tag": "X",
+      "patterns": [
+        "Gro\u00dfbuchstabe X",
+        "Capital letters X",
+        "X",
+        "Gro\u00df X"
+      ],
+      "responses": [
+        "X"
+      ]
+    },
+    {
+      "tag": "Y",
+      "patterns": [
+        "Gro\u00dfbuchstabe Y",
+        "Capital letters Y",
+        "Y",
+        "Gro\u00df Y"
+      ],
+      "responses": [
+        "Y"
+      ]
+    },
+    {
+      "tag": "Z",
+      "patterns": [
+        "Gro\u00dfbuchstabe Z",
+        "Capital letters Z",
+        "Z",
+        "Gro\u00df Z"
+      ],
+      "responses": [
+        "Z"
+      ]
+    },
+    {
+      "tag": "[",
+      "patterns": [
+        "Linke eckige Klammer",
+        "",
+        "Left square bracket",
+        "["
+      ],
+      "responses": [
+        "["
+      ]
+    },
+    {
+      "tag": "\\",
+      "patterns": [
+        "Umgekehrter Schr\u00e4gstrich Backslash",
+        "Backslash",
+        "Reverse slash backslash",
+        "\\"
+      ],
+      "responses": [
+        "\\"
+      ]
+    },
+    {
+      "tag": "]",
+      "patterns": [
+        "Rechte eckige Klammer",
+        "",
+        "Right square bracket",
+        "]"
+      ],
+      "responses": [
+        "]"
+      ]
+    },
+    {
+      "tag": "^",
+      "patterns": [
+        "Zirkumflex",
+        "",
+        "Circumflex",
+        "^"
+      ],
+      "responses": [
+        "^"
+      ]
+    },
+    {
+      "tag": "_",
+      "patterns": [
+        "Unterstrich",
+        "",
+        "Underscore",
+        "_"
+      ],
+      "responses": [
+        "_"
+      ]
+    },
+    {
+      "tag": "`",
+      "patterns": [
+        "Kleinbuchstaben `",
+        "Klein `",
+        "Lower case letters `",
+        "`"
+      ],
+      "responses": [
+        "`"
+      ]
+    },
+    {
+      "tag": "a",
+      "patterns": [
+        "Kleinbuchstaben a",
+        "Klein a",
+        "Lower case letters a",
+        "a"
+      ],
+      "responses": [
+        "a"
+      ]
+    },
+    {
+      "tag": "b",
+      "patterns": [
+        "Kleinbuchstaben b",
+        "Klein b",
+        "Lower case letters b",
+        "b"
+      ],
+      "responses": [
+        "b"
+      ]
+    },
+    {
+      "tag": "c",
+      "patterns": [
+        "Kleinbuchstaben c",
+        "Klein c",
+        "Lower case letters c",
+        "c"
+      ],
+      "responses": [
+        "c"
+      ]
+    },
+    {
+      "tag": "d",
+      "patterns": [
+        "Kleinbuchstaben d",
+        "Klein d",
+        "Lower case letters d",
+        "d"
+      ],
+      "responses": [
+        "d"
+      ]
+    },
+    {
+      "tag": "e",
+      "patterns": [
+        "Kleinbuchstaben e",
+        "Klein e",
+        "Lower case letters e",
+        "e"
+      ],
+      "responses": [
+        "e"
+      ]
+    },
+    {
+      "tag": "f",
+      "patterns": [
+        "Kleinbuchstaben f",
+        "Klein f",
+        "Lower case letters f",
+        "f"
+      ],
+      "responses": [
+        "f"
+      ]
+    },
+    {
+      "tag": "g",
+      "patterns": [
+        "Kleinbuchstaben g",
+        "Klein g",
+        "Lower case letters g",
+        "g"
+      ],
+      "responses": [
+        "g"
+      ]
+    },
+    {
+      "tag": "h",
+      "patterns": [
+        "Kleinbuchstaben h",
+        "Klein h",
+        "Lower case letters h",
+        "h"
+      ],
+      "responses": [
+        "h"
+      ]
+    },
+    {
+      "tag": "i",
+      "patterns": [
+        "Kleinbuchstaben i",
+        "Klein i",
+        "Lower case letters i",
+        "i"
+      ],
+      "responses": [
+        "i"
+      ]
+    },
+    {
+      "tag": "j",
+      "patterns": [
+        "Kleinbuchstaben j",
+        "Klein j",
+        "Lower case letters j",
+        "j"
+      ],
+      "responses": [
+        "j"
+      ]
+    },
+    {
+      "tag": "k",
+      "patterns": [
+        "Kleinbuchstaben k",
+        "Klein k",
+        "Lower case letters k",
+        "k"
+      ],
+      "responses": [
+        "k"
+      ]
+    },
+    {
+      "tag": "l",
+      "patterns": [
+        "Kleinbuchstaben l",
+        "Klein l",
+        "Lower case letters l",
+        "l"
+      ],
+      "responses": [
+        "l"
+      ]
+    },
+    {
+      "tag": "m",
+      "patterns": [
+        "Kleinbuchstaben m",
+        "Klein m",
+        "Lower case letters m",
+        "m"
+      ],
+      "responses": [
+        "m"
+      ]
+    },
+    {
+      "tag": "n",
+      "patterns": [
+        "Kleinbuchstaben n",
+        "Klein n",
+        "Lower case letters n",
+        "n"
+      ],
+      "responses": [
+        "n"
+      ]
+    },
+    {
+      "tag": "o",
+      "patterns": [
+        "Kleinbuchstaben o",
+        "Klein o",
+        "Lower case letters o",
+        "o"
+      ],
+      "responses": [
+        "o"
+      ]
+    },
+    {
+      "tag": "p",
+      "patterns": [
+        "Kleinbuchstaben p",
+        "Klein p",
+        "Lower case letters p",
+        "p"
+      ],
+      "responses": [
+        "p"
+      ]
+    },
+    {
+      "tag": "q",
+      "patterns": [
+        "Kleinbuchstaben q",
+        "Klein q",
+        "Lower case letters q",
+        "q"
+      ],
+      "responses": [
+        "q"
+      ]
+    },
+    {
+      "tag": "r",
+      "patterns": [
+        "Kleinbuchstaben r",
+        "Klein r",
+        "Lower case letters r",
+        "r"
+      ],
+      "responses": [
+        "r"
+      ]
+    },
+    {
+      "tag": "s",
+      "patterns": [
+        "Kleinbuchstaben s",
+        "Klein s",
+        "Lower case letters s",
+        "s"
+      ],
+      "responses": [
+        "s"
+      ]
+    },
+    {
+      "tag": "t",
+      "patterns": [
+        "Kleinbuchstaben t",
+        "Klein t",
+        "Lower case letters t",
+        "t"
+      ],
+      "responses": [
+        "t"
+      ]
+    },
+    {
+      "tag": "u",
+      "patterns": [
+        "Kleinbuchstaben u",
+        "Klein u",
+        "Lower case letters u",
+        "u"
+      ],
+      "responses": [
+        "u"
+      ]
+    },
+    {
+      "tag": "v",
+      "patterns": [
+        "Kleinbuchstaben v",
+        "Klein v",
+        "Lower case letters v",
+        "v"
+      ],
+      "responses": [
+        "v"
+      ]
+    },
+    {
+      "tag": "w",
+      "patterns": [
+        "Kleinbuchstaben w",
+        "Klein w",
+        "Lower case letters w",
+        "w"
+      ],
+      "responses": [
+        "w"
+      ]
+    },
+    {
+      "tag": "x",
+      "patterns": [
+        "Kleinbuchstaben x",
+        "Klein x",
+        "Lower case letters x",
+        "x"
+      ],
+      "responses": [
+        "x"
+      ]
+    },
+    {
+      "tag": "y",
+      "patterns": [
+        "Kleinbuchstaben y",
+        "Klein y",
+        "Lower case letters y",
+        "y"
+      ],
+      "responses": [
+        "y"
+      ]
+    },
+    {
+      "tag": "z",
+      "patterns": [
+        "Kleinbuchstaben z",
+        "Klein z",
+        "Lower case letters z",
+        "z"
+      ],
+      "responses": [
+        "z"
+      ]
+    },
+    {
+      "tag": "{",
+      "patterns": [
+        "Linke geschweifte Klammer",
+        "Left Curly Bracket",
+        "{"
+      ],
+      "responses": [
+        "{"
+      ]
+    },
+    {
+      "tag": "|",
+      "patterns": [
+        "Senkrechter Strich Pipe",
+        "Vertical Stroke Pipe",
+        "|"
+      ],
+      "responses": [
+        "|"
+      ]
+    },
+    {
+      "tag": "}",
+      "patterns": [
+        "Rechte geschweifte Klammer",
+        "Right Curly Bracket",
+        "}"
+      ],
+      "responses": [
+        "}"
+      ]
+    },
+    {
+      "tag": "~",
+      "patterns": [
+        "Tilde",
+        "Tilde",
+        "~"
+      ],
+      "responses": [
+        "~"
+      ]
+    }
+  ]
+}

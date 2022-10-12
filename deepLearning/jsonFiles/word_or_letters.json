@@ -18,7 +18,10 @@
         "letters",
         "characters",
         "sign by sign",
-        "character by character"
+        "character by character",
+        "buchstabe",
+        "buchstabe für bustabe",
+        "buchstabieren"
       ],
       "responses": [
         "character"
@@ -27,7 +30,8 @@
     {
       "tag": "exit",
       "patterns": [
-        "exit"
+        "exit",
+        "verlassen"
       ],
       "responses": [
         "exit"

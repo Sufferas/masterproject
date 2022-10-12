@@ -18,7 +18,8 @@ def from_microphone():
             print("Recording...")
             audio = speech_engine.record(micro, duration=5)
             print("Recognition...")
-            text = speech_engine.recognize_google(audio, language="en-EN")
+            #text = speech_engine.recognize_google(audio, language="en-EN")
+            text = speech_engine.recognize_google(audio, language="de-DE")
             print("You said " + text)
             # text = speech_engine.recognize_google(audio, language="en-EN")
             return text

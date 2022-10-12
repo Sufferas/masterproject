@@ -1,5 +1,5 @@
 from edit_file import open_read_file, open_write_file
-from speech_record import from_microphone, from_microphone_test
+from speech_record import from_microphone
 from tkinter import *
 
 def start_point():
@@ -29,9 +29,9 @@ def start_point():
 
 if __name__ == '__main__':
 
-
+    print("\\")
     print("Welcome, you can now edit files or codes also via voice control.")
-    # from_microphone()
+    from_microphone()
 
     # while True:
     #     start_point()

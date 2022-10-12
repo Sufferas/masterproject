@@ -46,7 +46,10 @@ class App(tk.Tk):
         line_being_edited_text.grid(column=1, row=2, sticky=tk.E, padx=5, pady=5)
         dict_tk["line_being_edited_text"] = line_being_edited_text
 
-        system_help_head = ttk.Label(self, text="The system requires special conmandos in some cases so that no information is lost and can be stored.", style='Heading.TLabel')
+        # system_help_head = ttk.Label(self, text="The system requires special conmandos in some cases so that no information is lost and can be stored.", style='Heading.TLabel')
+        system_help_head = ttk.Label(self,
+                                     text="___________________________________________________________________________",
+                                     style='Heading.TLabel')
         system_help_head.grid(column=0, row=3, sticky=tk.N, padx=5, pady=5, columnspan=4)
 
         voice_recording_output_label = ttk.Label(self, text="Voice recording output: ", style='Label.TLabel')
@@ -81,8 +84,8 @@ class App(tk.Tk):
             globals()[f"lines_{i}_label"] = ttk.Label(self, text=f"line:  {i} ", style='Label.TLabel')
             globals()[f"lines_{i}_label"].grid(column=0, row=add_rows_from_top+i, sticky=tk.W, padx=5, pady=1)
             dict_tk[f"lines_{i}_label"] = globals()[f"lines_{i}_label"]
-            globals()[f"lines_{i}_text"] = ttk.Label(self, text="xxxxxxxxxxxxxx#########################################################################################################"
-                                                                "#############################################################################################################################")
+            globals()[f"lines_{i}_text"] = ttk.Label(self, text="xxxxxx"
+                                                                "######")
             globals()[f"lines_{i}_text"].grid(column=1, row=add_rows_from_top+i, sticky=tk.W, padx=5, pady=1, columnspan=3)
             dict_tk[f"lines_{i}_text"] = globals()[f"lines_{i}_text"]
 

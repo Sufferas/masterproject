@@ -1,5 +1,5 @@
-
 import json
+
 
 def create_character_json():
 
@@ -8,6 +8,36 @@ def create_character_json():
     # loeschen 13
     # tab 9
     not_complete_json = []
+    j_proto = {
+        "tag": "delete",
+        "patterns": [
+            "delete",
+            "löschen",
+            "loeschen",
+            "zurück"
+        ],
+        "responses": [
+            "delete"
+        ]
+    }
+    not_complete_json.append(j_proto)
+
+    j_proto = {
+        "tag": "stop",
+        "patterns": [
+            "stop",
+            "beenden",
+            "ende",
+            "sicher",
+            "save"
+        ],
+        "responses": [
+            "stop"
+        ]
+    }
+    not_complete_json.append(j_proto)
+
+
     run = 0
     for i in range(9, 10):
         key = chr(i)
@@ -18,7 +48,7 @@ def create_character_json():
 
             ],
             "responses": [
-                "tab"
+                chr(i)
             ]
         }
         not_complete_json.append(j_proto)
@@ -33,6 +63,11 @@ def create_character_json():
                  "percent", "and sign", "apostrophe", "round opening bracket", "round closing bracket",
                  "asterisk", "plus", "comma", "minus", "period",
                  "slash"]
+    symbol_de_2 = ["abstand", "rufezeichen", "", "Hashtag", "",
+                 "prozent", "und", "", "runde Klammer links", "runde Klammer rechts",
+                 "Multiplikation", "", "komma", "minus", "punkt",
+                 "dividieren"]
+
 
 
 
@@ -44,10 +79,11 @@ def create_character_json():
             "patterns":[
                 str(symbol_de[run]),
                 str(symbol_en[run]),
+                str(symbol_de_2[run]),
                 str(key)
             ],
             "responses": [
-                str(key)
+                chr(i)
             ]
         }
         not_complete_json.append(j_proto)
@@ -68,7 +104,7 @@ def create_character_json():
                 str(symbol_num[run])
             ],
             "responses": [
-                str(key)
+                chr(i)
             ]
         }
         not_complete_json.append(j_proto)
@@ -88,7 +124,7 @@ def create_character_json():
                 str(key)
             ],
             "responses": [
-                str(key)
+                chr(i)
             ]
         }
         not_complete_json.append(j_proto)
@@ -102,18 +138,21 @@ def create_character_json():
             "patterns": [
                 "Großbuchstabe "+str(key),
                 "Capital letters "+str(key),
-                str(key)
+                str(key),
+                "Groß " + str(key),
             ],
             "responses": [
-                str(key)
+                chr(i)
             ]
         }
         not_complete_json.append(j_proto)
         run += 1
 
 
-    symbol_de = ["Linke eckige Klammer", "Umgekehrter Schrägstrich Backslash", "Rechte eckige Klammer", "Zirkumflex", "Unterstrich", "Gravis Backtick"]
-    symbol_en = ["Left square bracket", "Reverse slash backslash", "Right square bracket", "Circumflex", "Underscore", "Gravis backtick"]
+    symbol_de = ["Linke eckige Klammer", "Umgekehrter Schrägstrich Backslash", "Rechte eckige Klammer", "Zirkumflex", "Unterstrich", "Gravis"]
+    symbol_de_2 = ["", "Backslash", "", "",
+                 "", "Backtick"]
+    symbol_en = ["Left square bracket", "Reverse slash backslash", "Right square bracket", "Circumflex", "Underscore", "Gravis"]
 
     run = 0
     for i in range(91, 96):
@@ -122,30 +161,30 @@ def create_character_json():
             "tag": str(key),
             "patterns": [
                 str(symbol_de[run]),
+                str(symbol_de_2[run]),
                 str(symbol_en[run]),
                 str(key)
             ],
             "responses": [
-                str(key)
+                chr(i)
             ]
         }
         not_complete_json.append(j_proto)
         run += 1
 
     run = 0
-
-
-    for i in range(91, 123):
+    for i in range(96, 123):
         key = chr(i)
         j_proto = {
             "tag": str(key),
             "patterns": [
                 "Kleinbuchstaben " + str(key),
+                "Klein " + str(key),
                 "Lower case letters " + str(key),
                 str(key)
             ],
             "responses": [
-                str(key)
+                chr(i)
             ]
         }
         not_complete_json.append(j_proto)
@@ -156,7 +195,7 @@ def create_character_json():
     symbol_de = ["Linke geschweifte Klammer", "Senkrechter Strich Pipe", "Rechte geschweifte Klammer", "Tilde"]
     symbol_en = ["Left Curly Bracket", "Vertical Stroke Pipe", "Right Curly Bracket", "Tilde"]
 
-
+    run = 0
     for i in range(123, 127):
         key = chr(i)
         j_proto = {
@@ -167,34 +206,20 @@ def create_character_json():
                 str(key)
             ],
             "responses": [
-                str(key)
+                chr(i)
             ]
         }
         not_complete_json.append(j_proto)
         run += 1
 
+    # print(not_complete_json)
+
+    json_output = {"intents": not_complete_json}
 
 
-
-
-    print(not_complete_json)
-
-    not_coplite_json = [
-    {
-      "tag": "yes",
-      "patterns": [
-        "yes",
-        "yes please",
-        "ja",
-        "yes sure",
-        "sure yes",
-        "y"
-      ],
-      "responses": [
-        "YES"
-      ]
-    }
-  ]
+    with open('../deepLearning/jsonFiles/ascii.json', 'w') as f:
+        json.dump(json_output, f, indent=2)
+        print("New json file is created from data.json file")
 
 
 if __name__ == '__main__':
