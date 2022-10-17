@@ -23,6 +23,19 @@ def create_character_json():
     not_complete_json.append(j_proto)
 
     j_proto = {
+        "tag": "word",
+        "patterns": [
+            "word",
+            "wort",
+            "wort Eingabe"
+        ],
+        "responses": [
+            "word"
+        ]
+    }
+    not_complete_json.append(j_proto)
+
+    j_proto = {
         "tag": "stop",
         "patterns": [
             "stop",

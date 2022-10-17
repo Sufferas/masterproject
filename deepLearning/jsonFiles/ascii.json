@@ -13,6 +13,17 @@
       ]
     },
     {
+      "tag": "word",
+      "patterns": [
+        "word",
+        "wort",
+        "wort Eingabe"
+      ],
+      "responses": [
+        "word"
+      ]
+    },
+    {
       "tag": "stop",
       "patterns": [
         "stop",
@@ -28,9 +39,7 @@
     {
       "tag": "tab",
       "patterns": [
-        "tab",
-        "Tarp",
-        "Tabulator"
+        "tab"
       ],
       "responses": [
         "\t"

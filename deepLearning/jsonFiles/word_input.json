@@ -1,0 +1,27 @@
+{
+  "intents": [
+    {
+      "tag": "character",
+      "patterns": [
+        "buchstabe für bustabe",
+        "buchstabieren"
+      ],
+      "responses": [
+        "character"
+      ]
+    },
+    {
+      "tag": "save",
+      "patterns": [
+        "save",
+        "sichern",
+        "spreichern",
+        "exit",
+        "stop"
+      ],
+      "responses": [
+        "save"
+      ]
+    }
+  ]
+}

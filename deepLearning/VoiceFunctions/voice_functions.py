@@ -41,17 +41,45 @@ def edit_file():
     pass
 
 
+def word_input(dict_tk, output_text, main_input):
+    voice_to_text = from_microphone()
+    dict_tk["voice_recording_output_text"].config(text=voice_to_text)
+    status, text = get_trained_model("..\\deepLearning\\TrainedModels\\word_input.pth",
+                                     '..\\deepLearning\\jsonFiles\\word_input.json', voice_to_text)
 
-def character_input(dict_tk):
+    if status is True:
+        if "character" == text and main_input is False:
+            return output_text
+        elif "character" == text and main_input is True:
+            character_input(dict_tk, output_text, False)
+        elif "save" == text:
+            return True, output_text
+
+    else:
+        print("YES or NO")
+        print("add " + voice_to_text + " to " + output_text )
+        while True:
+            voice_to_text = from_microphone()
+            dict_tk["voice_recording_output_text"].config(text=voice_to_text)
+            status, yes_no_text = get_trained_model("..\\deepLearning\\TrainedModels\\yes_no_data.pth",
+                                             '..\\deepLearning\\jsonFiles\\yes_no.json', voice_to_text)
+            if yes_no_text == "YES":
+                output_text = output_text + voice_to_text
+            elif yes_no_text == "NO":
+                return
+
+
+
+
+def character_input(dict_tk, output_text, main_input):
 
     print("Start Carakter")
     time.sleep(5)
 
-    output_text = ""
     while True:
+        stop = False
         voice_to_text = from_microphone()
         dict_tk["voice_recording_output_text"].config(text=voice_to_text)
-        text = ""
         status, text = get_trained_model("..\\deepLearning\\TrainedModels\\ascii.pth",
                                          '..\\deepLearning\\jsonFiles\\ascii.json', voice_to_text)
 
@@ -61,7 +89,11 @@ def character_input(dict_tk):
         if "stop " == text:
             print(output_text)
             time.sleep(10)
-            return
+            return output_text
+
+        elif "word" == text:
+            stop, output_text = word_input(dict_tk, output_text, main_input)
+
         elif "delete" == text:
             if len(output_text) > 0:
                 output_text = output_text.rstrip(output_text[-1])
@@ -70,9 +102,8 @@ def character_input(dict_tk):
             output_text = output_text + text
             dict_tk["line_output_text"].config(text=output_text)
 
-
-
-
+        if stop is True:
+            return output_text
 
 
 def get_file_name(dict_tk):
@@ -83,6 +114,8 @@ def get_file_name(dict_tk):
         dict_tk["voice_recording_output_text"].config(text=voice_to_text)
         text = ""
         status, text = get_trained_model("..\\deepLearning\\TrainedModels\\word_or_letters.pth", '..\\deepLearning\\jsonFiles\\word_or_letters.json', voice_to_text)
+        output_text = ""
+
         if status is False:
             continue
 
@@ -92,7 +125,7 @@ def get_file_name(dict_tk):
             pass
         elif text == "character":
             print("character option")
-            character_input(dict_tk)
+            character_input(dict_tk, output_text, True)
 
         else:
             print("statement could not be understood: \nHelp: say (word) or (character) or (exit)")
