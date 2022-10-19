@@ -50,7 +50,6 @@ def create_character_json():
     }
     not_complete_json.append(j_proto)
 
-
     run = 0
     for i in range(9, 10):
         key = chr(i)
@@ -80,9 +79,6 @@ def create_character_json():
                  "prozent", "und", "", "runde Klammer links", "runde Klammer rechts",
                  "Multiplikation", "", "komma", "minus", "punkt",
                  "dividieren"]
-
-
-
 
     run = 0
     for i in range(32,48):
@@ -161,7 +157,6 @@ def create_character_json():
         not_complete_json.append(j_proto)
         run += 1
 
-
     symbol_de = ["Linke eckige Klammer", "Umgekehrter Schrägstrich Backslash", "Rechte eckige Klammer", "Zirkumflex", "Unterstrich", "Gravis"]
     symbol_de_2 = ["", "Backslash", "", "",
                  "", "Backtick"]
@@ -203,8 +198,6 @@ def create_character_json():
         not_complete_json.append(j_proto)
         run += 1
 
-
-
     symbol_de = ["Linke geschweifte Klammer", "Senkrechter Strich Pipe", "Rechte geschweifte Klammer", "Tilde"]
     symbol_en = ["Left Curly Bracket", "Vertical Stroke Pipe", "Right Curly Bracket", "Tilde"]
 
@@ -229,8 +222,8 @@ def create_character_json():
 
     json_output = {"intents": not_complete_json}
 
-
-    with open('../deepLearning/jsonFiles/ascii.json', 'w') as f:
+    # create second file .. first are edit
+    with open('../deepLearning/jsonFiles/ascii2.json', 'w') as f:
         json.dump(json_output, f, indent=2)
         print("New json file is created from data.json file")
 

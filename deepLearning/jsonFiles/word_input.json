@@ -13,11 +13,11 @@
     {
       "tag": "save",
       "patterns": [
-        "save",
         "sichern",
         "spreichern",
         "exit",
-        "stop"
+        "stop",
+        "eingabe beenden"
       ],
       "responses": [
         "save"

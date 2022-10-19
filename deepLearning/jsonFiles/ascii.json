@@ -62,7 +62,7 @@
       "patterns": [
         "ausrufezeichen",
         "exclamation mark",
-        "rufezeichen",
+        "rufzeichen",
         "!"
       ],
       "responses": [
@@ -418,6 +418,7 @@
       "patterns": [
         "at-Zeichen",
         "at sign",
+        "at Zeichen",
         "@"
       ],
       "responses": [
@@ -429,8 +430,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe A",
         "Capital letters A",
-        "A",
-        "Gro\u00df A"
+        "Gro\u00df A",
+        "Gro\u00dfbuchstabe Anton",
+        "Capital letters Anton",
+        "Gro\u00df Anton"
       ],
       "responses": [
         "A"
@@ -441,8 +444,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe B",
         "Capital letters B",
-        "B",
-        "Gro\u00df B"
+        "Gro\u00df B",
+        "Gro\u00dfbuchstabe Berta",
+        "Capital letters Berta",
+        "Gro\u00df Berta"
       ],
       "responses": [
         "B"
@@ -453,8 +458,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe C",
         "Capital letters C",
-        "C",
-        "Gro\u00df C"
+        "Gro\u00df C",
+        "Gro\u00dfbuchstabe Ceasar",
+        "Capital letters Ceasar",
+        "Gro\u00df Ceasar"
       ],
       "responses": [
         "C"
@@ -465,8 +472,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe D",
         "Capital letters D",
-        "D",
-        "Gro\u00df D"
+        "Gro\u00df D",
+        "Gro\u00dfbuchstabe Dora",
+        "Capital letters Dora",
+        "Gro\u00df Dora"
       ],
       "responses": [
         "D"
@@ -477,8 +486,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe E",
         "Capital letters E",
-        "E",
-        "Gro\u00df E"
+        "Gro\u00df E",
+        "Gro\u00dfbuchstabe Emil",
+        "Capital letters Emil",
+        "Gro\u00df Emil"
       ],
       "responses": [
         "E"
@@ -489,8 +500,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe F",
         "Capital letters F",
-        "F",
-        "Gro\u00df F"
+        "Gro\u00df F",
+        "Gro\u00dfbuchstabe Friedrich",
+        "Capital letters Friedrich",
+        "Gro\u00df Friedrich"
       ],
       "responses": [
         "F"
@@ -501,8 +514,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe G",
         "Capital letters G",
-        "G",
-        "Gro\u00df G"
+        "Gro\u00df G",
+        "Gro\u00dfbuchstabe Gustav",
+        "Capital letters Gustav",
+        "Gro\u00df Gustav"
       ],
       "responses": [
         "G"
@@ -514,7 +529,10 @@
         "Gro\u00dfbuchstabe H",
         "Capital letters H",
         "H",
-        "Gro\u00df H"
+        "Gro\u00df H",
+        "Gro\u00dfbuchstabe Heinrich",
+        "Capital letters Heinrich",
+        "Gro\u00df Heinrich"
       ],
       "responses": [
         "H"
@@ -525,8 +543,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe I",
         "Capital letters I",
-        "I",
-        "Gro\u00df I"
+        "Gro\u00df I",
+        "Gro\u00dfbuchstabe Ida",
+        "Capital letters Ida",
+        "Gro\u00df Ida"
       ],
       "responses": [
         "I"
@@ -538,7 +558,10 @@
         "Gro\u00dfbuchstabe J",
         "Capital letters J",
         "J",
-        "Gro\u00df J"
+        "Gro\u00df J",
+        "Gro\u00dfbuchstabe Julius",
+        "Capital letters Julius",
+        "Gro\u00df Julius"
       ],
       "responses": [
         "J"
@@ -550,7 +573,10 @@
         "Gro\u00dfbuchstabe K",
         "Capital letters K",
         "K",
-        "Gro\u00df K"
+        "Gro\u00df K",
+        "Gro\u00dfbuchstabe Kaufmann",
+        "Capital letters Kaufmann",
+        "Gro\u00df Kaufmann"
       ],
       "responses": [
         "K"
@@ -561,8 +587,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe L",
         "Capital letters L",
-        "L",
-        "Gro\u00df L"
+        "Gro\u00df L",
+        "Gro\u00dfbuchstabe Ludwig",
+        "Capital letters Ludwi",
+        "Gro\u00df Ludwi"
       ],
       "responses": [
         "L"
@@ -573,8 +601,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe M",
         "Capital letters M",
-        "M",
-        "Gro\u00df M"
+        "Gro\u00df M",
+        "Gro\u00dfbuchstabe Martha",
+        "Capital letters Martha",
+        "Gro\u00df Martha"
       ],
       "responses": [
         "M"
@@ -585,8 +615,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe N",
         "Capital letters N",
-        "N",
-        "Gro\u00df N"
+        "Gro\u00df N",
+        "Gro\u00dfbuchstabe Nordpol",
+        "Capital letters Nordpol",
+        "Gro\u00df Nordpol"
       ],
       "responses": [
         "N"
@@ -597,8 +629,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe O",
         "Capital letters O",
-        "O",
-        "Gro\u00df O"
+        "Gro\u00df O",
+        "Gro\u00dfbuchstabe Otto",
+        "Capital letters Otto",
+        "Gro\u00df Otto"
       ],
       "responses": [
         "O"
@@ -609,8 +643,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe P",
         "Capital letters P",
-        "P",
-        "Gro\u00df P"
+        "Gro\u00df P",
+        "Gro\u00dfbuchstabe Paula",
+        "Capital letters Paula",
+        "Gro\u00df Paula"
       ],
       "responses": [
         "P"
@@ -621,8 +657,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe Q",
         "Capital letters Q",
-        "Q",
-        "Gro\u00df Q"
+        "Gro\u00df Q",
+        "Gro\u00dfbuchstabe Qelle",
+        "Capital letters Qelle",
+        "Gro\u00df Qelle"
       ],
       "responses": [
         "Q"
@@ -633,8 +671,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe R",
         "Capital letters R",
-        "R",
-        "Gro\u00df R"
+        "Gro\u00df R",
+        "Gro\u00dfbuchstabe Richard",
+        "Capital letters Richard",
+        "Gro\u00df Richard"
       ],
       "responses": [
         "R"
@@ -645,8 +685,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe S",
         "Capital letters S",
-        "S",
-        "Gro\u00df S"
+        "Gro\u00df S",
+        "Gro\u00dfbuchstabe Samuel",
+        "Capital letters Samuel",
+        "Gro\u00df Samuel"
       ],
       "responses": [
         "S"
@@ -657,8 +699,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe T",
         "Capital letters T",
-        "T",
-        "Gro\u00df T"
+        "Gro\u00df T",
+        "Gro\u00dfbuchstabe Theodor",
+        "Capital letters Theodor",
+        "Gro\u00df Theodor"
       ],
       "responses": [
         "T"
@@ -669,8 +713,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe U",
         "Capital letters U",
-        "U",
-        "Gro\u00df U"
+        "Gro\u00df U",
+        "Gro\u00dfbuchstabe Ulrich",
+        "Capital letters Ulrich",
+        "Gro\u00df Ulrich"
       ],
       "responses": [
         "U"
@@ -681,8 +727,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe V",
         "Capital letters V",
-        "V",
-        "Gro\u00df V"
+        "Gro\u00df V",
+        "Gro\u00dfbuchstabe Viktor",
+        "Capital letters Viktor",
+        "Gro\u00df Viktor"
       ],
       "responses": [
         "V"
@@ -693,8 +741,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe W",
         "Capital letters W",
-        "W",
-        "Gro\u00df W"
+        "Gro\u00df W",
+        "Gro\u00dfbuchstabe Wilhelm",
+        "Capital letters Wilhelm",
+        "Gro\u00df Wilhelm"
       ],
       "responses": [
         "W"
@@ -717,8 +767,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe Y",
         "Capital letters Y",
-        "Y",
-        "Gro\u00df Y"
+        "Gro\u00df Y",
+        "Gro\u00dfbuchstabe Ypsilon",
+        "Capital letters Ypsilon",
+        "Gro\u00df Ypsilon"
       ],
       "responses": [
         "Y"
@@ -729,8 +781,10 @@
       "patterns": [
         "Gro\u00dfbuchstabe Z",
         "Capital letters Z",
-        "Z",
-        "Gro\u00df Z"
+        "Gro\u00df Z",
+        "Gro\u00dfbuchstabe Zwickau",
+        "Capital letters Zwickau",
+        "Gro\u00df Zwickau"
       ],
       "responses": [
         "Z"
@@ -811,10 +865,12 @@
     {
       "tag": "a",
       "patterns": [
-        "Kleinbuchstaben a",
+        "Kleinbuchstabe a",
         "Klein a",
         "Lower case letters a",
-        "a"
+        "Kleinbuchstabe Anton",
+        "Klein Anton",
+        "Lower case letters Anton"
       ],
       "responses": [
         "a"
@@ -823,10 +879,12 @@
     {
       "tag": "b",
       "patterns": [
-        "Kleinbuchstaben b",
+        "Kleinbuchstabe b",
         "Klein b",
         "Lower case letters b",
-        "b"
+        "Kleinbuchstabe Berta",
+        "Klein Berta",
+        "Lower case letters Berta"
       ],
       "responses": [
         "b"
@@ -835,10 +893,12 @@
     {
       "tag": "c",
       "patterns": [
-        "Kleinbuchstaben c",
+        "Kleinbuchstabe c",
         "Klein c",
         "Lower case letters c",
-        "c"
+        "Kleinbuchstabe Ceasar",
+        "Klein Ceasar",
+        "Lower case letters Ceasar"
       ],
       "responses": [
         "c"
@@ -847,10 +907,13 @@
     {
       "tag": "d",
       "patterns": [
-        "Kleinbuchstaben d",
+        "Kleinbuchstabe d",
         "Klein d",
         "Lower case letters d",
-        "d"
+        "Kleinbuchstabe Dora",
+        "Klein Dora",
+        "Lower case letters Dora"
+
       ],
       "responses": [
         "d"
@@ -859,10 +922,12 @@
     {
       "tag": "e",
       "patterns": [
-        "Kleinbuchstaben e",
+        "Kleinbuchstabe e",
         "Klein e",
         "Lower case letters e",
-        "e"
+        "Kleinbuchstabe Emil",
+        "Klein Emil",
+        "Lower case letters Emil"
       ],
       "responses": [
         "e"
@@ -871,10 +936,12 @@
     {
       "tag": "f",
       "patterns": [
-        "Kleinbuchstaben f",
+        "Kleinbuchstabe f",
         "Klein f",
         "Lower case letters f",
-        "f"
+        "Kleinbuchstabe Friedrich",
+        "Klein Friedrich",
+        "Lower case letters Friedrich"
       ],
       "responses": [
         "f"
@@ -883,10 +950,12 @@
     {
       "tag": "g",
       "patterns": [
-        "Kleinbuchstaben g",
+        "Kleinbuchstabe g",
         "Klein g",
         "Lower case letters g",
-        "g"
+        "Kleinbuchstabe Gustav",
+        "Klein Gustav",
+        "Lower case letters Gustav"
       ],
       "responses": [
         "g"
@@ -895,10 +964,12 @@
     {
       "tag": "h",
       "patterns": [
-        "Kleinbuchstaben h",
+        "Kleinbuchstabe h",
         "Klein h",
         "Lower case letters h",
-        "h"
+        "Kleinbuchstabe Heinrich",
+        "Klein Heinrich",
+        "Lower case letters Heinrich"
       ],
       "responses": [
         "h"
@@ -907,10 +978,12 @@
     {
       "tag": "i",
       "patterns": [
-        "Kleinbuchstaben i",
+        "Kleinbuchstabe i",
         "Klein i",
         "Lower case letters i",
-        "i"
+        "Kleinbuchstabe Ida",
+        "Klein Ida",
+        "Lower case letters Ida"
       ],
       "responses": [
         "i"
@@ -919,10 +992,12 @@
     {
       "tag": "j",
       "patterns": [
-        "Kleinbuchstaben j",
+        "Kleinbuchstabe j",
         "Klein j",
         "Lower case letters j",
-        "j"
+        "Kleinbuchstabe Julius",
+        "Klein Julius",
+        "Lower case letters Julius"
       ],
       "responses": [
         "j"
@@ -931,10 +1006,12 @@
     {
       "tag": "k",
       "patterns": [
-        "Kleinbuchstaben k",
+        "Kleinbuchstabe k",
         "Klein k",
         "Lower case letters k",
-        "k"
+        "Kleinbuchstabe Kaufmann",
+        "Klein Kaufmann",
+        "Lower case letters Kaufmann"
       ],
       "responses": [
         "k"
@@ -943,10 +1020,12 @@
     {
       "tag": "l",
       "patterns": [
-        "Kleinbuchstaben l",
+        "Kleinbuchstabe l",
         "Klein l",
         "Lower case letters l",
-        "l"
+        "Kleinbuchstabe Ludwig",
+        "Klein Ludwig",
+        "Lower case letters Ludwig"
       ],
       "responses": [
         "l"
@@ -955,10 +1034,12 @@
     {
       "tag": "m",
       "patterns": [
-        "Kleinbuchstaben m",
+        "Kleinbuchstabe m",
         "Klein m",
         "Lower case letters m",
-        "m"
+        "Kleinbuchstabe Marta",
+        "Klein Marta",
+        "Lower case letters Marta"
       ],
       "responses": [
         "m"
@@ -967,10 +1048,12 @@
     {
       "tag": "n",
       "patterns": [
-        "Kleinbuchstaben n",
+        "Kleinbuchstabe n",
         "Klein n",
         "Lower case letters n",
-        "n"
+        "Kleinbuchstabe Nordpol",
+        "Klein Nordpol",
+        "Lower case letters Nordpol"
       ],
       "responses": [
         "n"
@@ -979,10 +1062,12 @@
     {
       "tag": "o",
       "patterns": [
-        "Kleinbuchstaben o",
+        "Kleinbuchstabe o",
         "Klein o",
         "Lower case letters o",
-        "o"
+        "Kleinbuchstabe Otto",
+        "Klein Otto",
+        "Lower case letters Otto"
       ],
       "responses": [
         "o"
@@ -991,10 +1076,12 @@
     {
       "tag": "p",
       "patterns": [
-        "Kleinbuchstaben p",
+        "Kleinbuchstabe p",
         "Klein p",
         "Lower case letters p",
-        "p"
+        "Kleinbuchstabe Paula",
+        "Klein Paula",
+        "Lower case letters Paula"
       ],
       "responses": [
         "p"
@@ -1003,10 +1090,12 @@
     {
       "tag": "q",
       "patterns": [
-        "Kleinbuchstaben q",
+        "Kleinbuchstabe q",
         "Klein q",
         "Lower case letters q",
-        "q"
+        "Kleinbuchstabe Quelle",
+        "Klein Quelle",
+        "Lower case letters Quelle"
       ],
       "responses": [
         "q"
@@ -1015,10 +1104,12 @@
     {
       "tag": "r",
       "patterns": [
-        "Kleinbuchstaben r",
+        "Kleinbuchstabe r",
         "Klein r",
         "Lower case letters r",
-        "r"
+        "Kleinbuchstabe Richard",
+        "Klein Richard",
+        "Lower case letters Richard"
       ],
       "responses": [
         "r"
@@ -1027,10 +1118,15 @@
     {
       "tag": "s",
       "patterns": [
-        "Kleinbuchstaben s",
+        "Kleinbuchstabe s",
         "Klein s",
         "Lower case letters s",
-        "s"
+        "Kleinbuchstabe es",
+        "Klein es",
+        "Lower case letters es",
+        "Kleinbuchstabe Samuel",
+        "Klein Samuel",
+        "Lower case letters Samuel"
       ],
       "responses": [
         "s"
@@ -1039,10 +1135,12 @@
     {
       "tag": "t",
       "patterns": [
-        "Kleinbuchstaben t",
-        "Klein t",
-        "Lower case letters t",
-        "t"
+        "Kleinbuchstabe et",
+        "Klein et",
+        "Lower case letters et",
+        "Kleinbuchstabe Theodor",
+        "Klein Theodor",
+        "Lower case letters Theodor"
       ],
       "responses": [
         "t"
@@ -1051,10 +1149,12 @@
     {
       "tag": "u",
       "patterns": [
-        "Kleinbuchstaben u",
+        "Kleinbuchstabe u",
         "Klein u",
         "Lower case letters u",
-        "u"
+        "Kleinbuchstabe Ulrich",
+        "Klein Ulrich",
+        "Lower case letters Ulrich"
       ],
       "responses": [
         "u"
@@ -1063,10 +1163,12 @@
     {
       "tag": "v",
       "patterns": [
-        "Kleinbuchstaben v",
+        "Kleinbuchstabe v",
         "Klein v",
         "Lower case letters v",
-        "v"
+        "Kleinbuchstabe Viktor",
+        "Klein Viktor",
+        "Lower case letters Viktor"
       ],
       "responses": [
         "v"
@@ -1075,10 +1177,12 @@
     {
       "tag": "w",
       "patterns": [
-        "Kleinbuchstaben w",
+        "Kleinbuchstabe w",
         "Klein w",
         "Lower case letters w",
-        "w"
+        "Kleinbuchstabe Wilhelm",
+        "Klein Wilhelm",
+        "Lower case letters Wilhelm"
       ],
       "responses": [
         "w"
@@ -1087,7 +1191,7 @@
     {
       "tag": "x",
       "patterns": [
-        "Kleinbuchstaben x",
+        "Kleinbuchstabe x",
         "Klein x",
         "Lower case letters x",
         "x"
@@ -1099,10 +1203,12 @@
     {
       "tag": "y",
       "patterns": [
-        "Kleinbuchstaben y",
+        "Kleinbuchstabe y",
         "Klein y",
         "Lower case letters y",
-        "y"
+        "Kleinbuchstabe Ypsilon",
+        "Klein Ypsilon",
+        "Lower case letters Ypsilon"
       ],
       "responses": [
         "y"
@@ -1111,10 +1217,12 @@
     {
       "tag": "z",
       "patterns": [
-        "Kleinbuchstaben z",
+        "Kleinbuchstabe z",
         "Klein z",
         "Lower case letters z",
-        "z"
+        "Kleinbuchstabe Zwickau",
+        "Klein Zwickau",
+        "Lower case letters Zwickau"
       ],
       "responses": [
         "z"

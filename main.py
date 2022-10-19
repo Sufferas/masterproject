@@ -1,3 +1,4 @@
+from deepLearning.chat import get_trained_model
 from edit_file import open_read_file, open_write_file
 from speech_record import from_microphone
 from tkinter import *
@@ -27,11 +28,18 @@ def start_point():
         if "edit new file" == "edit new file": # replace "edit new file" with a Command
             return
 
+
 if __name__ == '__main__':
 
     print("\\")
     print("Welcome, you can now edit files or codes also via voice control.")
-    from_microphone()
+    # from_microphone()
+    while True:
+        voice_to_text = from_microphone()
+        print(voice_to_text)
+        status, text = get_trained_model("deepLearning\\TrainedModels\\ascii.pth",
+                                         'deepLearning\\jsonFiles\\ascii.json', voice_to_text)
+        print(text)
 
     # while True:
     #     start_point()

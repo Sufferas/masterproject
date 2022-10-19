@@ -42,33 +42,47 @@ def edit_file():
 
 
 def word_input(dict_tk, output_text, main_input):
-    voice_to_text = from_microphone()
-    dict_tk["voice_recording_output_text"].config(text=voice_to_text)
-    status, text = get_trained_model("..\\deepLearning\\TrainedModels\\word_input.pth",
-                                     '..\\deepLearning\\jsonFiles\\word_input.json', voice_to_text)
 
-    if status is True:
-        if "character" == text and main_input is False:
-            return output_text
-        elif "character" == text and main_input is True:
-            character_input(dict_tk, output_text, False)
-        elif "save" == text:
+
+    print("Start Word input")
+    time.sleep(5)
+    while True:
+        voice_to_text_word = from_microphone()
+        dict_tk["voice_recording_output_text"].config(text=voice_to_text_word)
+        # status, text = get_trained_model("..\\deepLearning\\TrainedModels\\word_input.pth",
+        #                                  '..\\deepLearning\\jsonFiles\\word_input.json', voice_to_text)
+        # print(status, text)
+
+        # if status is True:
+        #     if "character" == text and main_input is False:
+        #         return output_text
+        #     elif "character" == text and main_input is True:
+        #         character_input(dict_tk, output_text, False)
+        #     elif "save" == voice_to_text:
+        #         return True, output_text
+        if "safe" == voice_to_text_word:
             return True, output_text
 
-    else:
-        print("YES or NO")
-        print("add " + voice_to_text + " to " + output_text )
-        while True:
-            voice_to_text = from_microphone()
-            dict_tk["voice_recording_output_text"].config(text=voice_to_text)
-            status, yes_no_text = get_trained_model("..\\deepLearning\\TrainedModels\\yes_no_data.pth",
-                                             '..\\deepLearning\\jsonFiles\\yes_no.json', voice_to_text)
-            if yes_no_text == "YES":
-                output_text = output_text + voice_to_text
-            elif yes_no_text == "NO":
-                return
+        if "Buchstabe" == voice_to_text_word:
+            return False, output_text
 
-
+        else:
+            print("YES or NO")
+            time.sleep(2)
+            print("add (" + voice_to_text_word + ") to " + output_text )
+            while_true = True
+            while while_true:
+                voice_to_text = from_microphone()
+                dict_tk["voice_recording_output_text"].config(text=voice_to_text)
+                status, yes_no_text = get_trained_model("..\\deepLearning\\TrainedModels\\yes_no_data.pth",
+                                                 '..\\deepLearning\\jsonFiles\\yes_no.json', voice_to_text)
+                if yes_no_text == "YES":
+                    output_text = output_text + voice_to_text_word
+                    print(output_text)
+                    dict_tk["line_output_text"].config(text=str(output_text))
+                    while_true = False
+                elif yes_no_text == "NO":
+                    while_true = False
 
 
 def character_input(dict_tk, output_text, main_input):
@@ -80,6 +94,7 @@ def character_input(dict_tk, output_text, main_input):
         stop = False
         voice_to_text = from_microphone()
         dict_tk["voice_recording_output_text"].config(text=voice_to_text)
+        text = ""
         status, text = get_trained_model("..\\deepLearning\\TrainedModels\\ascii.pth",
                                          '..\\deepLearning\\jsonFiles\\ascii.json', voice_to_text)
 
@@ -131,7 +146,6 @@ def get_file_name(dict_tk):
             print("statement could not be understood: \nHelp: say (word) or (character) or (exit)")
             dict_tk["user_help_text"].config(
                 text="statement could not be understood: \nHelp: say (word) or (character) or (exit)")
-
 
 
 def create_file(dict_tk):
