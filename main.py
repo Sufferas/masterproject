@@ -3,6 +3,7 @@ from edit_file import open_read_file, open_write_file
 from speech_record import from_microphone
 from tkinter import *
 
+
 def start_point():
     """
     Commands
@@ -34,12 +35,22 @@ if __name__ == '__main__':
     print("\\")
     print("Welcome, you can now edit files or codes also via voice control.")
     # from_microphone()
+
+    activation_text = "HELLO ALICE, HEY ALICE, HALLO ALICE, HELLO ELLIS, HEY ELLIS, HALLO ELLIS"
     while True:
         voice_to_text = from_microphone()
         print(voice_to_text)
-        status, text = get_trained_model("deepLearning\\TrainedModels\\ascii.pth",
-                                         'deepLearning\\jsonFiles\\ascii.json', voice_to_text)
-        print(text)
+        upper_voice_to_text = voice_to_text.upper()
+
+        if activation_text.find(upper_voice_to_text) != -1:
+            print(f"Das Wort '{upper_voice_to_text }' wurde gefunden.")
+        else:
+            print(f"Das Wort '{upper_voice_to_text}' wurde nicht gefunden.")
+
+
+        # status, text = get_trained_model("deepLearning\\TrainedModels\\ascii.pth",
+        #                                  'deepLearning\\jsonFiles\\ascii.json', voice_to_text)
+        # print(text)
 
     # while True:
     #     start_point()
