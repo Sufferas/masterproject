@@ -1,0 +1,74 @@
+{
+  "intents": [
+    {
+      "tag": "left",
+      "patterns": [
+        "move the mouse to the left",
+        "mouse left",
+        "Bewege die Maus nach links",
+        "maus nach links"
+      ],
+      "responses": [
+        "left"
+      ]
+    },
+    {
+      "tag": "right",
+      "patterns": [
+        "move the mouse to the right",
+        "mouse right",
+        "Bewege die Maus nach rechts",
+        "Maus nach rechts"
+      ],
+      "responses": [
+        "right"
+      ]
+    },
+    {
+      "tag": "up",
+      "patterns": [
+        "Bewege die Maus nach oben",
+        "Maus nach oben",
+        "Move the mouse up",
+        "Mouse up"
+      ],
+      "responses": [
+        "up"
+      ]
+    },
+    {
+      "tag": "down",
+      "patterns": [
+        "Bewege die Maus nach unten",
+        "Maus nach unten",
+        "Move the mouse down",
+        "Mouse down"
+      ],
+      "responses": [
+        "down"
+      ]
+    },
+    {
+      "tag": "right_mouse",
+      "patterns": [
+        "Rechte maus taste klicken",
+        "klicke Rechte maustaste",
+        "click right mouse button"
+      ],
+      "responses": [
+        "right_mouse"
+      ]
+    },
+    {
+      "tag": "left_mouse",
+      "patterns": [
+        "Linke maus taste klicken",
+        "klicke linke maustaste",
+        "click left mouse button"
+      ],
+      "responses": [
+        "left_mouse"
+      ]
+    }
+  ]
+}

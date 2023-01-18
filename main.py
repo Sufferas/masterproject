@@ -2,6 +2,7 @@ from deepLearning.chat import get_trained_model
 from edit_file import open_read_file, open_write_file
 from speech_record import from_microphone
 from tkinter import *
+import trained_funktions_list
 
 
 def start_point():
@@ -30,6 +31,21 @@ def start_point():
             return
 
 
+def search_function():
+    # voice_to_text = from_microphone()
+
+    # status, text = get_trained_model("deepLearning\\TrainedModels\\ascii.pth",
+    #                                  'deepLearning\\jsonFiles\\ascii.json', voice_to_text)
+
+    function_call = getattr(trained_funktions_list, 'move_mouse')
+    function_call(" move mouse to left 55 steps")
+
+
+
+
+
+
+
 if __name__ == '__main__':
 
     print("\\")
@@ -38,12 +54,16 @@ if __name__ == '__main__':
 
     activation_text = "HELLO ALICE, HEY ALICE, HALLO ALICE, HELLO ELLIS, HEY ELLIS, HALLO ELLIS"
     while True:
-        voice_to_text = from_microphone()
-        print(voice_to_text)
-        upper_voice_to_text = voice_to_text.upper()
+        # voice_to_text = from_microphone()
+        # print(voice_to_text)
+        # upper_voice_to_text = voice_to_text.upper()
+        upper_voice_to_text = "HALLO ALICE"
+
 
         if activation_text.find(upper_voice_to_text) != -1:
             print(f"Das Wort '{upper_voice_to_text }' wurde gefunden.")
+            search_function()
+
         else:
             print(f"Das Wort '{upper_voice_to_text}' wurde nicht gefunden.")
 
