@@ -92,18 +92,21 @@ def move_mouse(param=None):
             leave = False
             number = int(match.group())
             print(number)
-            if text == "left":
-                pyautogui.moveRel(-number, 0, duration=1)
-            elif text == "right":
-                pyautogui.moveRel(number, 0, duration=1)
-            elif text == "up":
-                pyautogui.moveRel(0, -number, duration=1)
-            elif text == "down":
-                pyautogui.moveRel(0, number, duration=1)
-            elif text == "right_mouse":
-                pyautogui.click(button='right')
-            elif text == "left_mouse":
-                pyautogui.click(button='left')
+            try:
+                if text == "left":
+                    pyautogui.moveRel(-number, 0, duration=1)
+                elif text == "right":
+                    pyautogui.moveRel(number, 0, duration=1)
+                elif text == "up":
+                    pyautogui.moveRel(0, -number, duration=1)
+                elif text == "down":
+                    pyautogui.moveRel(0, number, duration=1)
+                elif text == "right_mouse":
+                    pyautogui.click(button='right')
+                elif text == "left_mouse":
+                    pyautogui.click(button='left')
+            except:
+                print("out off move")
 
 
 
