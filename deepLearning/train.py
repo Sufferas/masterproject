@@ -136,5 +136,6 @@ if __name__ == "__main__":
     # train_models('jsonFiles/word_or_letters.json', "TrainedModels/word_or_letters.pth", CONST)
     # train_models('jsonFiles/ascii.json', "TrainedModels/ascii.pth", CONST)
     # train_models('jsonFiles/word_input.json', "TrainedModels/word_input.pth", CONST)
-    train_models('jsonFiles/mouse_move.json', "TrainedModels/mouse_move.pth", CONST)
+    # train_models('jsonFiles/mouse_move.json', "TrainedModels/mouse_move.pth", CONST)
+    train_models('jsonFiles/train_call_function.json', "TrainedModels/train_call_function.pth", CONST)
 
