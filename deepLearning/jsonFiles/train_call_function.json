@@ -110,6 +110,546 @@
       "responses": [
         "py_bool"
       ]
+    },
+    {
+      "tag": "py_bytearray",
+      "patterns": [
+        "gibt ein Bytearray-Objekt zurück",
+        "returns a byte array object"
+      ],
+      "responses": [
+        "py_bytearray"
+      ]
+    },
+    {
+      "tag": "py_bytes",
+      "patterns": [
+        "gibt ein Bytes-Objekt zurück",
+        "returns a bytes object"
+      ],
+      "responses": [
+        "py_bytes"
+      ]
+    },
+    {
+      "tag": "py_callable",
+      "patterns": [
+        "gibt True zurück, wenn das angegebene Objekt aufrufbar ist, andernfalls gibt sie False zurück",
+        "returns True if the specified object is callable, otherwise it returns False"
+      ],
+      "responses": [
+        "py_callable"
+      ]
+    },
+    {
+      "tag": "py_chr",
+      "patterns": [
+        "gibt das Zeichen zurück, das den angegebenen Unicode repräsentiert",
+        "returns the character representing the specified Unicode"
+      ],
+      "responses": [
+        "py_chr"
+      ]
+    },
+    {
+      "tag": "py_compile",
+      "patterns": [
+        "gibt die angegebene Quelle als Codeobjekt zurück, bereit zur Ausführung",
+        "Returns the specified source as a code object, ready for execution"
+      ],
+      "responses": [
+        "py_compile"
+      ]
+    },
+    {
+      "tag": "py_complex",
+      "patterns": [
+        "gibt eine komplexe Zahl zurück, indem sie eine reelle Zahl und eine imaginäre Zahl angibt",
+        "returns a complex number by specifying a real number and an imaginary number"
+      ],
+      "responses": [
+        "py_complex"
+      ]
+    },
+    {
+      "tag": "py_delattr",
+      "patterns": [
+        "löscht das angegebene Attribut aus dem angegebenen Objekt",
+        "deletes the specified attribute from the specified object"
+      ],
+      "responses": [
+        "py_delattr"
+      ]
+    },
+    {
+      "tag": "py_dict",
+      "patterns": [
+        "erzeugt ein Wörterbuch (Array)",
+        "creates a dictionary (array)"
+      ],
+      "responses": [
+        "py_dict"
+      ]
+    },
+    {
+      "tag": "py_divmod",
+      "patterns": [
+        "gibt ein Tupel zurück, das den Quotienten und den Rest enthält, wenn Dividend durch Divisor dividiert wird",
+        "returns a tuple containing the quotient and the remainder when dividing dividend by divisor"
+      ],
+      "responses": [
+        "py_divmod"
+      ]
+    },
+    {
+      "tag": "py_enumerate",
+      "patterns": [
+        "nimmt eine Auflistung und gibt sie als Enumerate-Objekt zurück",
+        "takes a collection and returns it as an enumerate object"
+      ],
+      "responses": [
+        "py_enumerate"
+      ]
+    },
+    {
+      "tag": "py_eval",
+      "patterns": [
+        "wertet den angegebenen Ausdruck aus, sofern es sich um eine legale Python-Anweisung handelt",
+        "evaluates the given expression, if it is a legal Python statement"
+      ],
+      "responses": [
+        "py_eval"
+      ]
+    },
+    {
+      "tag": "py_exec",
+      "patterns": [
+        "führt den angegebenen Python-Code aus",
+        "executes the specified Python code"
+      ],
+      "responses": [
+        "py_exec"
+      ]
+    },
+    {
+      "tag": "py_filter",
+      "patterns": [
+        "gibt einen Iterator zurück, in dem die Elemente durch eine Funktion gefiltert werden, um zu prüfen, ob das Element akzeptiert wird oder nicht",
+        "returns an iterator in which the elements are filtered by a function to check whether the element is accepted or not"
+      ],
+      "responses": [
+        "py_filter"
+      ]
+    },
+    {
+      "tag": "py_float",
+      "patterns": [
+        "wandelt den angegebenen Wert in eine Fließkommazahl um",
+        "Converts the specified value to a floating point number"
+      ],
+      "responses": [
+        "py_float"
+      ]
+    },
+    {
+      "tag": "py_format",
+      "patterns": [
+        "formatiert einen angegebenen Wert in ein bestimmtes Format",
+        "formats a specified value into a specific format"
+      ],
+      "responses": [
+        "py_format"
+      ]
+    },
+    {
+      "tag": "py_frozenset",
+      "patterns": [
+        "gibt ein unveränderbares frozenset-Objekt zurück",
+        "returns an immutable frozenset object"
+      ],
+      "responses": [
+        "py_frozenset"
+      ]
+    },
+    {
+      "tag": "py_getattr",
+      "patterns": [
+        "gibt den Wert des angegebenen Attributs aus dem angegebenen Objekt zurück",
+        "returns the value of the specified attribute from the specified object"
+      ],
+      "responses": [
+        "py_getattr"
+      ]
+    },
+    {
+      "tag": "py_globals",
+      "patterns": [
+        "gibt die globale Symboltabelle als Dictionary zurück",
+        "returns the global symbol table as a dictionary"
+      ],
+      "responses": [
+        "py_globals"
+      ]
+    },
+    {
+      "tag": "py_hasattr",
+      "patterns": [
+        "gibt True zurück, wenn das angegebene Objekt das angegebene Attribut hat, ansonsten False",
+        "returns True if the specified object has the specified attribute, otherwise False"
+      ],
+      "responses": [
+        "py_hasattr"
+      ]
+    },
+    {
+      "tag": "py_hex",
+      "patterns": [
+        "wandelt die angegebene Zahl in einen hexadezimalen Wert um",
+        "converts the specified number to a hexadecimal value"
+      ],
+      "responses": [
+        "py_hex"
+      ]
+    },
+    {
+      "tag": "py_id",
+      "patterns": [
+        "gibt eine eindeutige ID für das angegebene Objekt zurück",
+        "returns a unique ID for the specified object"
+      ],
+      "responses": [
+        "py_id"
+      ]
+    },
+    {
+      "tag": "py_input",
+      "patterns": [
+        "ermöglicht Benutzereingaben",
+        "Enables user input"
+      ],
+      "responses": [
+        "py_input"
+      ]
+    },
+    {
+      "tag": "py_int",
+      "patterns": [
+        "wandelt den angegebenen Wert in eine ganze Zahl um",
+        "Converts the specified value into an integer number"
+      ],
+      "responses": [
+        "py_int"
+      ]
+    },
+    {
+      "tag": "py_isinstance",
+      "patterns": [
+        "gibt True zurück, wenn das angegebene Objekt vom angegebenen Typ ist, ansonsten False",
+        "returns True if the specified object is of the specified type, otherwise False"
+      ],
+      "responses": [
+        "py_isinstance"
+      ]
+    },
+    {
+      "tag": "py_issubclass",
+      "patterns": [
+        "gibt True zurück, wenn das angegebene Objekt eine Unterklasse des angegebenen Objekts ist, ansonsten False",
+        "returns True if the specified object is a subclass of the specified object, otherwise False"
+      ],
+      "responses": [
+        "py_issubclass"
+      ]
+    },
+    {
+      "tag": "py_iter",
+      "patterns": [
+        "gibt ein Iterator-Objekt zurück",
+        "returns an iterator object"
+      ],
+      "responses": [
+        "py_iter"
+      ]
+    },
+    {
+      "tag": "py_len",
+      "patterns": [
+        "gibt die Anzahl der Elemente in einem Objekt zurück",
+        "returns the number of elements in an object"
+      ],
+      "responses": [
+        "py_len"
+      ]
+    },
+    {
+      "tag": "py_list",
+      "patterns": [
+        "erzeugt ein Listenobjekt",
+        "creates a list object"
+      ],
+      "responses": [
+        "py_list"
+      ]
+    },
+    {
+      "tag": "py_locals",
+      "patterns": [
+        "gibt die lokale Symboltabelle als Dictionary zurück",
+        "returns the local symbol table as a dictionary"
+      ],
+      "responses": [
+        "py_locals"
+      ]
+    },
+    {
+      "tag": "py_map",
+      "patterns": [
+        "führt eine angegebene Funktion für jedes Element in einer Iterable aus",
+        "executes a specified function for each element in an iterable"
+      ],
+      "responses": [
+        "py_map"
+      ]
+    },
+    {
+      "tag": "py_max",
+      "patterns": [
+        "gibt das Element mit dem höchsten Wert bzw. das Element mit dem höchsten Wert in einer Iterable zurück",
+        "returns the element with the highest value or the element with the highest value in an iterable"
+      ],
+      "responses": [
+        "py_max"
+      ]
+    },
+    {
+      "tag": "py_memoryview",
+      "patterns": [
+        "gibt ein Memory-View-Objekt von einem angegebenen Objekt zurück",
+        "returns a memory view object from a specified object"
+      ],
+      "responses": [
+        "py_memoryview"
+      ]
+    },
+    {
+      "tag": "py_min",
+      "patterns": [
+        "gibt das Element mit dem niedrigsten Wert bzw. das Element mit dem niedrigsten Wert in einer Iterable zurück",
+        "returns the element with the lowest value or the element with the lowest value in an iterable"
+      ],
+      "responses": [
+        "py_min"
+      ]
+    },
+    {
+      "tag": "py_next",
+      "patterns": [
+        "gibt das nächste Element in einem Iterator zurück",
+        "returns the next element in an iterator"
+      ],
+      "responses": [
+        "py_next"
+      ]
+    },
+    {
+      "tag": "py_object",
+      "patterns": [
+        "gibt ein leeres Objekt zurück",
+        "returns an empty object"
+      ],
+      "responses": [
+        "py_object"
+      ]
+    },
+    {
+      "tag": "py_open",
+      "patterns": [
+        "öffnet eine Datei und gibt sie als Dateiobjekt zurück",
+        "opens a file and returns it as a file object"
+      ],
+      "responses": [
+        "py_open"
+      ]
+    },
+    {
+      "tag": "py_ord",
+      "patterns": [
+        "gibt die Zahl zurück, die den Unicode-Code eines angegebenen Zeichens darstellt",
+        "returns the number representing the Unicode code of a specified character"
+      ],
+      "responses": [
+        "py_ord"
+      ]
+    },
+    {
+      "tag": "py_pow",
+      "patterns": [
+        "gibt den Wert von x als Potenz von y (x^y) zurück",
+        "returns the value of x as a power of y (x^y)"
+      ],
+      "responses": [
+        "py_pow"
+      ]
+    },
+    {
+      "tag": "py_print",
+      "patterns": [
+        "gibt die angegebene Meldung auf dem Bildschirm oder einem anderen Standardausgabegerät aus",
+        "outputs the specified message to the screen or other standard output device"
+      ],
+      "responses": [
+        "py_print"
+      ]
+    },
+    {
+      "tag": "py_range",
+      "patterns": [
+        "gibt eine Folge von Zahlen zurück, die standardmäßig bei 0 beginnt, um 1 erhöht wird und vor einer angegebenen Zahl aufhört",
+        "returns a sequence of numbers that by default starts at 0, increments by 1, and stops before a specified number"
+      ],
+      "responses": [
+        "py_range"
+      ]
+    },
+    {
+      "tag": "py_repr",
+      "patterns": [
+        "gibt eine lesbare Version eines Objekts zurück",
+        "Returns a readable version of an object"
+      ],
+      "responses": [
+        "py_repr"
+      ]
+    },
+    {
+      "tag": "py_reversed",
+      "patterns": [
+        "gibt ein umgekehrtes Iterator-Objekt zurück",
+        "returns an inverted iterator object"
+      ],
+      "responses": [
+        "py_reversed"
+      ]
+    },
+    {
+      "tag": "py_round",
+      "patterns": [
+        "gibt eine Fließkommazahl zurück, die eine gerundete Version der angegebenen Zahl ist, mit der angegebenen Anzahl von Nachkommastellen",
+        "returns a floating point number that is a rounded version of the specified number, with the specified number of decimal places"
+      ],
+      "responses": [
+        "py_round"
+      ]
+    },
+    {
+      "tag": "py_set",
+      "patterns": [
+        "erzeugt ein Set-Objekt",
+        "creates a Set object"
+      ],
+      "responses": [
+        "py_set"
+      ]
+    },
+    {
+      "tag": "py_setattr",
+      "patterns": [
+        "setzt den Wert des angegebenen Attributs des angegebenen Objekts",
+        "sets the value of the specified attribute of the specified object"
+      ],
+      "responses": [
+        "py_setattr"
+      ]
+    },
+    {
+      "tag": "py_slice",
+      "patterns": [
+        "gibt ein Slice-Objekt zurück",
+        "returns a slice object"
+      ],
+      "responses": [
+        "py_slice"
+      ]
+    },
+    {
+      "tag": "py_sorted",
+      "patterns": [
+        "gibt eine sortierte Liste des angegebenen iterierbaren Objekts zurück",
+        "returns a sorted list of the specified iterable object"
+      ],
+      "responses": [
+        "py_sorted"
+      ]
+    },
+    {
+      "tag": "py_str",
+      "patterns": [
+        "wandelt den angegebenen Wert in eine Zeichenkette um",
+        "Converts the specified value into a string"
+      ],
+      "responses": [
+        "py_str"
+      ]
+    },
+    {
+      "tag": "py_sum",
+      "patterns": [
+        "gibt eine Zahl zurück, die Summe aller Elemente in einer Iterable",
+        "returns a number, the sum of all elements in an iterable"
+      ],
+      "responses": [
+        "py_sum"
+      ]
+    },
+    {
+      "tag": "py_super",
+      "patterns": [
+        "wird verwendet, um den Zugriff auf Methoden und Eigenschaften einer Eltern- oder Geschwisterklasse zu ermöglichen",
+        "is used to provide access to methods and properties of a parent or sibling class"
+      ],
+      "responses": [
+        "py_super"
+      ]
+    },
+    {
+      "tag": "py_tuple",
+      "patterns": [
+        "erzeugt ein Tupel-Objekt. Elemente in einem Tupel können nicht geändert oder entfernt werden",
+        "creates a tuple object. Elements in a tuple cannot be modified or removed"
+      ],
+      "responses": [
+        "py_tuple"
+      ]
+    },
+    {
+      "tag": "py_type",
+      "patterns": [
+        "gibt den Typ des angegebenen Objekts zurück",
+        "returns the type of the specified object"
+      ],
+      "responses": [
+        "py_type"
+      ]
+    },
+    {
+      "tag": "py_vars",
+      "patterns": [
+        "gibt das Attribut __dict__ eines Objekts zurück",
+        "returns the __dict__ attribute of an object"
+      ],
+      "responses": [
+        "py_vars"
+      ]
+    },
+    {
+      "tag": "py_zip",
+      "patterns": [
+        "gibt ein zip-Objekt zurück, das ein Iterator von Tupeln ist, bei dem das erste Element in jedem übergebenen Iterator gepaart wird und dann das zweite Element in jedem übergebenen Iterator gepaart wird usw",
+        "returns a zip object which is an iterator of tuples where the first element in each passed iterator is paired and then the second element in each passed iterator is paired, etc."
+      ],
+      "responses": [
+        "py_zip"
+      ]
     }
   ]
 }
