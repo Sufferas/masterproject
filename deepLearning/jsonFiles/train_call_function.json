@@ -1,0 +1,115 @@
+{
+  "intents": [
+    {
+      "tag": "hello_world",
+      "patterns": [
+        "hello_world"
+      ],
+      "responses": [
+        "hello_world"
+      ]
+    },
+    {
+      "tag": "python_main_function",
+      "patterns": [
+        "python main function",
+        "create main function"
+      ],
+      "responses": [
+        "python_main_function"
+      ]
+    },
+    {
+      "tag": "python_for_loop",
+      "patterns": [
+        "python for loop",
+        "create for loop"
+      ],
+      "responses": [
+        "python_for_loop"
+      ]
+    },
+    {
+      "tag": "python_function",
+      "patterns": [
+        "python function",
+        "how to create a python function",
+        "erstelle eine python function"
+      ],
+      "responses": [
+        "python_function"
+      ]
+    },
+    {
+      "tag": "move_mouse",
+      "patterns": [
+        "move mouse",
+        "bewege die maus nach",
+        "maus klicks nach"
+      ],
+      "responses": [
+        "move_mouse"
+      ]
+    },
+    {
+      "tag": "py_abs",
+      "patterns": [
+        "gibt den Absolutwert der angegebenen Zahl zurück",
+        "Returns the absolute value of the specified number."
+      ],
+      "responses": [
+        "py_abs"
+      ]
+    },
+    {
+      "tag": "py_all",
+      "patterns": [
+        "gibt True zurück, wenn alle Elemente in einer Iterable wahr sind, andernfalls gibt sie False zurück.",
+        "returns True if all elements in an iterable are true, otherwise it returns False."
+      ],
+      "responses": [
+        "py_all"
+      ]
+    },
+    {
+      "tag": "py_any",
+      "patterns": [
+        "gibt True zurück, wenn alle Elemente in einer Iterable wahr sind, andernfalls gibt sie False zurück",
+        "returns True if all elements in an iterable are true, otherwise it returns False"
+      ],
+      "responses": [
+        "py_any"
+      ]
+    },
+    {
+      "tag": "py_ascii",
+      "patterns": [
+        "gibt eine lesbare Version eines beliebigen Objekts (Strings, Tupel, Listen, etc.) zurück",
+        "returns a readable version of any object (strings, tuples, lists, etc.)"
+      ],
+      "responses": [
+        "py_ascii"
+      ]
+    },
+    {
+      "tag": "py_bin",
+      "patterns": [
+        "gibt die binäre Version einer Ganzzahl zurück",
+        "returns the binary version of an integer"
+      ],
+      "responses": [
+        "py_bin"
+      ]
+    },
+    {
+      "tag": "py_bool",
+      "patterns": [
+        "gibt den booleschen Wert eines angegebenen Objekts zurück",
+        "returns the boolean value of a specified object"
+      ],
+      "responses": [
+        "py_bool"
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import re
 from deepLearning.chat import get_trained_model
 import pyautogui
 
+from speech_record import from_microphone
 
 keyboard = Controller()
 
@@ -109,12 +110,36 @@ def move_mouse(param=None):
                 print("out off move")
 
 
-
-
-
         else:
             print("number not found")
             print("say it again")
+            voice_to_text = from_microphone()
+            status, text = get_trained_model("deepLearning\\TrainedModels\\mouse_move.pth",
+                                             'deepLearning\\jsonFiles\\mouse_move.json', voice_to_text)
+
+
+def py_abs():
+    keyboard.type('# abs() #Returns the absolute value of the specified number.\n')
+
+
+def py_all():
+    keyboard.type('# all() #returns True if all elements in an iterable are true, otherwise it returns False.\n')
+
+
+def py_any():
+    keyboard.type('# any() #returns True if all elements in an iterable are true, otherwise it returns False\n')
+
+
+def py_ascii():
+    keyboard.type('# ascii() #returns a readable version of any object (strings, tuples, lists, etc.)\n')
+
+
+def py_bin():
+    keyboard.type('# bin() #returns the binary version of an integer\n')
+
+
+def py_bool():
+    keyboard.type('# bin() #returns the boolean value of a specified object\n')
 
 
 
