@@ -32,13 +32,15 @@ def start_point():
 
 
 def search_function():
-    # voice_to_text = from_microphone()
+    voice_to_text = from_microphone()
 
-    # status, text = get_trained_model("deepLearning\\TrainedModels\\ascii.pth",
-    #                                  'deepLearning\\jsonFiles\\ascii.json', voice_to_text)
+    status, text = get_trained_model("deepLearning\\TrainedModels\\train_call_function.pth",
+                                      'deepLearning\\jsonFiles\\train_call_function.json', voice_to_text)
 
-    function_call = getattr(trained_funktions_list, 'move_mouse')
-    function_call(" move mouse to left 55 steps")
+    print(text)
+
+    function_call = getattr(trained_funktions_list, "move_mouse")
+    function_call(text)
 
 
 
@@ -54,10 +56,10 @@ if __name__ == '__main__':
 
     activation_text = "HELLO ALICE, HEY ALICE, HALLO ALICE, HELLO ELLIS, HEY ELLIS, HALLO ELLIS"
     while True:
-        # voice_to_text = from_microphone()
-        # print(voice_to_text)
-        # upper_voice_to_text = voice_to_text.upper()
-        upper_voice_to_text = "HALLO ALICE"
+        voice_to_text = from_microphone()
+        print(voice_to_text)
+        upper_voice_to_text = voice_to_text.upper()
+        # upper_voice_to_text = "HALLO ALICE"
 
 
         if activation_text.find(upper_voice_to_text) != -1:

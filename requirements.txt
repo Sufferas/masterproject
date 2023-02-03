@@ -1,0 +1,8 @@
+SpeechRecognition
+torch
+torchvision
+torchaudio
+numpy
+tkinter
+pynput
+pyautogui
