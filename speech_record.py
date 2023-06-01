@@ -1,7 +1,5 @@
 import speech_recognition as sr
-import pyaudio
 
-file_name = "audio/long.wav"
 speech_engine = sr.Recognizer()
 
 
@@ -26,10 +24,3 @@ def from_microphone():
         except:
             return "no voice input detected"
 
-
-# def read_py_data():
-#     datei = open('main.py', 'r')
-#     print(datei.read(2))
-# # print(from_file(file_name))
-# #print(from_microphone())
-# read_py_data()

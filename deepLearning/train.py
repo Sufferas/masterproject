@@ -6,7 +6,7 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from deepLearning.nltk_utils import bag_of_words, tokenize, stem
 from model_neural_net import NeuralNet
-
+from torch.utils.tensorboard import SummaryWriter
 
 class CONST:
     NUM_EPOCHS = 1000
@@ -94,6 +94,9 @@ def train_models(json_file, trained_model, CONST):
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=CONST.LEARNING_RATE)
 
+    # Erstellen Sie eine Instanz von SummaryWriter
+    writer = SummaryWriter(f"runs/{json_file.split('/')[-1].split('.')[0]}_experiment_BATCH_SIZE_HIDDEN_SIZE_8")
+
     # Train the model
     for epoch in range(CONST.NUM_EPOCHS):
         for (words, labels) in train_loader:
@@ -111,6 +114,9 @@ def train_models(json_file, trained_model, CONST):
             loss.backward()
             optimizer.step()
 
+        # Speichern des Verlustes (Loss) in TensorBoard
+        writer.add_scalar("Training Loss", loss.item(), epoch)
+
         if (epoch + 1) % 100 == 0:
             print(f'Epoch [{epoch + 1}/{CONST.NUM_EPOCHS}], Loss: {loss.item():.4f}')
 
@@ -127,6 +133,7 @@ def train_models(json_file, trained_model, CONST):
 
     torch.save(data, trained_model)
     print(f'training complete. file saved to {trained_model}')
+    writer.close()
 
 
 if __name__ == "__main__":

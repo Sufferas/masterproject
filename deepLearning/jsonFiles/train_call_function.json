@@ -44,7 +44,9 @@
       "tag": "move_mouse",
       "patterns": [
         "move mouse",
-        "bewege die maus nach",
+        "bewege die Maus nach",
+        "klicke die rechte Maustaste",
+        "klicke die linke Maustaste",
         "maus klicks nach"
       ],
       "responses": [
@@ -649,6 +651,18 @@
       ],
       "responses": [
         "py_zip"
+      ]
+    },
+    {
+      "tag": "ask_gpt",
+      "patterns": [
+        "Frage chatGPT",
+        "Frage chat GPT",
+        "Chat Fragen",
+        "Frage an chat"
+      ],
+      "responses": [
+        "ask_gpt"
       ]
     }
   ]

@@ -1,3 +1,4 @@
+from GUI.testsub import create_and_show_gui
 from deepLearning.chat import get_trained_model
 from edit_file import open_read_file, open_write_file
 from speech_record import from_microphone
@@ -39,8 +40,16 @@ def search_function():
 
     print(text)
 
-    function_call = getattr(trained_funktions_list, "move_mouse")
-    function_call(text)
+    try:
+        # Überprüfe, ob das Attribut im Modul existiert
+        if hasattr(trained_funktions_list, text):
+            # Wenn ja, rufe die Funktion auf
+            function_call = getattr(trained_funktions_list, text)
+            function_call(voice_to_text)
+        else:
+            print(f'Die Funktion {text} existiert nicht im Modul trained_funktions_list.')
+    except AttributeError as e:
+        print(f'Es gab einen Fehler: {e}')
 
 
 
@@ -50,11 +59,9 @@ def search_function():
 
 if __name__ == '__main__':
 
-    print("\\")
-    print("Welcome, you can now edit files or codes also via voice control.")
-    # from_microphone()
+    create_and_show_gui('Welcome, you can now edit files or codes also via voice control.', 3000)
 
-    activation_text = "HELLO ALICE, HEY ALICE, HALLO ALICE, HELLO ELLIS, HEY ELLIS, HALLO ELLIS"
+    activation_text = "HELLO ALICE, HEY ALICE, HALLO ALICE, HELLO ELLIS, HEY ELLIS, HALLO ELLIS, HEY DU, HALLO DU"
     while True:
         voice_to_text = from_microphone()
         print(voice_to_text)
@@ -63,6 +70,7 @@ if __name__ == '__main__':
 
 
         if activation_text.find(upper_voice_to_text) != -1:
+            create_and_show_gui('How can I help you?', 2000)
             print(f"Das Wort '{upper_voice_to_text }' wurde gefunden.")
             search_function()
 
@@ -70,13 +78,3 @@ if __name__ == '__main__':
             print(f"Das Wort '{upper_voice_to_text}' wurde nicht gefunden.")
 
 
-        # status, text = get_trained_model("deepLearning\\TrainedModels\\ascii.pth",
-        #                                  'deepLearning\\jsonFiles\\ascii.json', voice_to_text)
-        # print(text)
-
-    # while True:
-    #     start_point()
-
-
-    # open_read_file('File2.py')
-    # open_write_file('File2.py')

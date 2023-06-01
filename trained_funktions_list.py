@@ -1,10 +1,14 @@
 import time
 from pynput.keyboard import Key, Controller, Listener
 import re
+
+from GUI.testsub import create_and_show_gui
 from deepLearning.chat import get_trained_model
 import pyautogui
 
 from speech_record import from_microphone
+
+import openai
 
 keyboard = Controller()
 
@@ -78,12 +82,20 @@ def python_function(param=None):
 
 
 def move_mouse(param=None):
-    if debug is True:
-        print(" Time to Sleep 10 sec then work!!")
-        time.sleep(10)
+    # if debug is True:
+    #     print(" Time to Sleep 10 sec then work!!")
+    #     time.sleep(10)
+    print(param)
 
     status, text = get_trained_model("deepLearning\\TrainedModels\\mouse_move.pth",
                                      'deepLearning\\jsonFiles\\mouse_move.json', param)
+
+    if text == "right_mouse":
+        pyautogui.click(button='right')
+        return
+    if text == "left_mouse":
+        pyautogui.click(button='left')
+        return
 
     leave = True
     match = re.search(r'\d+', param)
@@ -102,25 +114,23 @@ def move_mouse(param=None):
                     pyautogui.moveRel(0, -number, duration=1)
                 elif text == "down":
                     pyautogui.moveRel(0, number, duration=1)
-                elif text == "right_mouse":
-                    pyautogui.click(button='right')
-                elif text == "left_mouse":
-                    pyautogui.click(button='left')
                 else:
+                    create_and_show_gui('no direction was given\n\nsay it again', 2000)
+                    voice_to_text = from_microphone()
+                    status, text = get_trained_model("deepLearning\\TrainedModels\\mouse_move.pth",
+                                                     'deepLearning\\jsonFiles\\mouse_move.json', voice_to_text)
                     leave = True
             except:
                 print("out off move")
 
 
         else:
-            time.sleep(2)
+            create_and_show_gui('number not found\n\nsay it again', 2000)
             print("number not found")
             print("say it again")
             voice_to_text = from_microphone()
-            status, text = get_trained_model("deepLearning\\TrainedModels\\mouse_move.pth",
-                                             'deepLearning\\jsonFiles\\mouse_move.json', voice_to_text)
+
             match = re.search(r'\d+', voice_to_text)
-            time.sleep(2)
 
 
 def py_abs(param=None):
@@ -361,3 +371,25 @@ def py_vars(param=None):
 
 def py_zip(param=None):
     keyboard.type('# zip() # returns a zip object which is an iterator of tuples where the first element in each passed iterator is paired and then the second element in each passed iterator is paired, etc.')
+
+
+
+# Stellen Sie sicher, dass Sie Ihren API-Schlüssel von OpenAI eingetragen haben
+openai.api_key = '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'
+
+
+def ask_gpt(param=None):
+    create_and_show_gui('Ask your question to chatGPT?\n', 2000)
+    voice_to_text = from_microphone()
+    response = openai.ChatCompletion.create(
+      model="gpt-3.5-turbo",
+      messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": voice_to_text},
+        ]
+    )
+    print(response['choices'][0]['message']['content'])
+    return response['choices'][0]['message']['content']
+
+# Frage an GPT-4 senden
+# print(ask_gpt("Wie ist das Wetter heute?"))

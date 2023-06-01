@@ -6,3 +6,5 @@ numpy
 tkinter
 pynput
 pyautogui
+tensorboard
+openai
