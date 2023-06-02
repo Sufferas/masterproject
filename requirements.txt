@@ -8,3 +8,5 @@ pynput
 pyautogui
 tensorboard
 openai
+threading
+pygame

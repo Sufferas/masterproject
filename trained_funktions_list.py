@@ -2,13 +2,14 @@ import time
 from pynput.keyboard import Key, Controller, Listener
 import re
 
-from GUI.testsub import create_and_show_gui
+from GUI.testsub import create_and_show_gui, create_gui
 from deepLearning.chat import get_trained_model
 import pyautogui
 
 from speech_record import from_microphone
 
 import openai
+import threading
 
 keyboard = Controller()
 
@@ -131,6 +132,16 @@ def move_mouse(param=None):
             voice_to_text = from_microphone()
 
             match = re.search(r'\d+', voice_to_text)
+
+
+def next_slide():
+    # Simuliere einen Druck auf die rechte Pfeiltaste
+    pyautogui.press('right')
+
+
+def previous_slide():
+    # Simuliere einen Druck auf die linke Pfeiltaste
+    pyautogui.press('left')
 
 
 def py_abs(param=None):
@@ -375,12 +386,12 @@ def py_zip(param=None):
 
 
 # Stellen Sie sicher, dass Sie Ihren API-Schlüssel von OpenAI eingetragen haben
-openai.api_key = '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'
+openai.api_key = 'hgjghjghjgh'
 
 
 def ask_gpt(param=None):
     create_and_show_gui('Ask your question to chatGPT?\n', 2000)
-    voice_to_text = from_microphone()
+    voice_to_text = from_microphone(10)
     response = openai.ChatCompletion.create(
       model="gpt-3.5-turbo",
       messages=[
@@ -388,8 +399,16 @@ def ask_gpt(param=None):
             {"role": "user", "content": voice_to_text},
         ]
     )
+    # Erstelle einen neuen Thread für die GUI und setze daemon auf True
+    gui_thread = threading.Thread(target=create_gui, args=(response['choices'][0]['message']['content'],), daemon=True)
+    gui_thread.start()
     print(response['choices'][0]['message']['content'])
-    return response['choices'][0]['message']['content']
 
-# Frage an GPT-4 senden
-# print(ask_gpt("Wie ist das Wetter heute?"))
+
+def next_slide(param=None):
+    # Simuliere einen Druck auf die rechte Pfeiltaste
+    pyautogui.press('right')
+
+def previous_slide(param=None):
+    # Simuliere einen Druck auf die linke Pfeiltaste
+    pyautogui.press('left')

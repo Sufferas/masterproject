@@ -56,9 +56,27 @@ def create_gui(text_to_display):
     root = tk.Tk()
     root.title('Fenster')
 
-    # Erstelle ein Label und zeige den Text an, setze die Schriftgröße auf 24
-    label = tk.Label(root, text=text_to_display, font=('Arial', 12), pady=10)
-    label.pack()
+    # Erstelle ein Text-Widget
+    text_widget = tk.Text(root, wrap='word', font=('Arial', 12), bg=root.cget('bg'), relief='flat', state='disabled')
+    text_widget.pack(fill='both', expand=True)
+
+    # Text in das Text-Widget einfügen
+    text_widget.configure(state='normal')
+    text_widget.insert('1.0', text_to_display)
+    text_widget.configure(state='disabled')
+
+    # Funktion zum Kopieren des ausgewählten Textes
+    def copy_text():
+        try:
+            # Kopiere den ausgewählten Text in die Zwischenablage
+            root.clipboard_clear()
+            root.clipboard_append(text_widget.selection_get())
+        except tk.TclError:
+            # Kein Text ausgewählt
+            pass
+
+    # Füge die Kopierfunktion zur rechten Maustaste hinzu
+    text_widget.bind('<Button-3>', lambda e: copy_text())
 
     # Starte die Hauptloop
     root.mainloop()

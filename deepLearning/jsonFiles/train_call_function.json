@@ -664,6 +664,65 @@
       "responses": [
         "ask_gpt"
       ]
+    },
+    {
+      "tag": "next_slide",
+      "patterns": [
+        "gehe zum nächsten slide",
+        "nächster slide",
+        "wechsel zum nächsten slide",
+        "nächste folie bitte",
+        "weiter bitte",
+        "nächste folie",
+        "folie weiter",
+        "zeige den nächsten slide",
+        "nächster bitte",
+        "weiter zum nächsten slide",
+        "slide weiter",
+        "folie vor",
+        "nächste Seite",
+        "gehe zum nächsten Seite",
+        "nächster Seite",
+        "wechsel zum nächsten Seite",
+        "zeige die nächsten Seite",
+        "nächster bitte",
+        "weiter zur nächster Seite",
+        "Seite weiter"
+      ],
+      "responses": [
+        "next_slide"
+      ]
+    },
+    {
+      "tag": "previous_slide",
+      "patterns": [
+        "gehe zum vorherigen slide",
+        "vorheriger slide",
+        "wechsel zum vorherigen slide",
+        "vorherige folie bitte",
+        "zurück bitte",
+        "vorherige folie",
+        "folie zurück",
+        "zeige den vorherigen slide",
+        "zurück zum vorherigen slide",
+        "slide zurück",
+        "folie zurück",
+        "rücke einen slide zurück",
+        "geh einen slide zurück",
+        "wechsel einen slide zurück",
+        "gehe zum vorherigen Seite",
+        "vorheriger Seite",
+        "wechsel zum vorherigen Seite",
+        "zeige den vorherigen Seite",
+        "zurück zum vorherigen Seite",
+        "Seite zurück",
+        "rücke einen Seite zurück",
+        "geh einen Seite zurück",
+        "wechsel einen Seite zurück"
+      ],
+      "responses": [
+        "previous_slide"
+      ]
     }
   ]
 }

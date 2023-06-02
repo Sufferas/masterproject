@@ -10,11 +10,11 @@ def from_file(file_name):
         return text
 
 
-def from_microphone():
+def from_microphone(duration=5):
     with sr.Microphone() as micro:
         try:
             print("Recording...")
-            audio = speech_engine.record(micro, duration=5)
+            audio = speech_engine.record(micro, duration=duration)
             print("Recognition...")
             #text = speech_engine.recognize_google(audio, language="en-EN")
             text = speech_engine.recognize_google(audio, language="de-DE")
