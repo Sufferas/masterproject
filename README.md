@@ -35,7 +35,7 @@ tkinterapp.py
 die Idee ist, alle Funktionen in einem eigenen GUI-Fenster zu bearbeiten und zu schreiben 
 für den derzeitigen Zeitpunkt erwies sich das als hinderlich und wurde deswegen wieder entfernt
 
-## neu GUI
+## Neue GUI Funktionen
 Sobald Spachaktivierung aktiv ist zb duch "hey du" öffnet sich eine Fenster für ein paar Sekunden
 Beu der Chat Funktion öffnet sich ein Fenster damit der Ausgabetext kopiert werden kann.
 
